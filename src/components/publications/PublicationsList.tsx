@@ -1,0 +1,224 @@
+'use client';
+
+
+
+import { useMemo, useState } from 'react';
+
+import Image from 'next/image';
+
+import PaperMotionThumbnail from '@/components/publications/PaperMotionThumbnail';
+
+import Link from 'next/link';
+
+import { Copy, Check, FileText, ArrowUpRight, Search, BookOpen, Network, GraduationCap, ExternalLink } from 'lucide-react';
+
+import { Publication } from '@/types/publication';
+
+import { PublicationPageConfig } from '@/types/page';
+
+import { researchPapers } from '@/data/researchPapers';
+
+import { nodes } from '@/data/researchMap';
+
+import { useLocaleStore } from '@/lib/stores/localeStore';
+
+import DoubleBlindPipeline from '@/components/publications/DoubleBlindPipeline';
+
+
+
+interface Props { config: PublicationPageConfig; publications: Publication[]; embedded?: boolean }
+
+const groups = [
+
+  { key:'published', en:'Published · Peer-reviewed', zh:'已发表 · 同行评审', desc:'Journal and conference papers with formal publication records', descZh:'已正式发表且有出版记录的期刊与会议论文' },
+
+  { key:'accepted', en:'Accepted', zh:'已录用', desc:'Accepted for a research venue; final publication details may follow', descZh:'已获得录用决定，正式出版信息可能尚待更新' },
+
+  { key:'preprint', en:'Public Preprints', zh:'公开预印本', desc:'Publicly available, not equivalent to an accepted peer-reviewed article', descZh:'已公开但不等同于同行评审正式录用' },
+
+  { key:'pending', en:'Manuscripts · Decision Pending', zh:'在投与审稿中稿件', desc:'Non-archival manuscripts; decisions are not implied', descZh:'尚未收到决定的非正式出版稿件；不代表已录用' }
+
+] as const;
+
+
+
+export default function PublicationsList({ config, publications, embedded=false }: Props) {
+
+  const locale = useLocaleStore(s=>s.locale); const zh=locale==='zh';
+
+  const [query,setQuery] = useState('');
+
+  const [group,setGroup] = useState('all');
+
+  const [abstractOpen,setAbstractOpen] = useState<string[]>([]);
+
+  const [bibtexOpen,setBibtexOpen] = useState<string[]>([]);
+
+  const [copied,setCopied] = useState<string|null>(null);
+
+  const master = useMemo(()=>new Map(researchPapers.map(p=>[p.bibkey,p])),[]);
+
+  const all = useMemo(()=>publications.filter(p=>!query || [p.title, ...p.authors.map(a=>a.name),p.venue||'',p.description||'',...(p.keywords||[])].join(' ').toLowerCase().includes(query.toLowerCase())),[publications,query]);
+
+  const matching = all.filter(p=>group==='all' || p.status===group);
+
+  function toggle(id:string,type:'abstract'|'bib') { const setter=type==='abstract'?setAbstractOpen:setBibtexOpen; setter(prev=>prev.includes(id)?prev.filter(x=>x!==id):[...prev,id]); }
+
+  async function copy(id:string,bib:string) {try{await navigator.clipboard.writeText(bib);setCopied(id);}catch{setCopied(null)}}
+
+  const badge='inline-flex items-center rounded-full border border-violet-200 dark:border-violet-400/30 bg-violet-50 dark:bg-violet-400/10 px-2.5 py-1 text-[11px] font-semibold text-violet-800 dark:text-violet-100';
+
+  return <section className="space-y-7">
+
+    <header className="space-y-3">
+
+      <p className="text-[11px] tracking-[.19em] text-violet-700 dark:text-violet-200 font-bold uppercase">YULI LIU · RESEARCH OUTPUTS</p>
+
+      <h1 className={`${embedded?'text-2xl':'text-4xl'} font-serif font-bold text-primary`}>{config.title}</h1>
+
+      <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-300 leading-7 max-w-3xl">{config.description}</p>
+
+      <div className="flex flex-wrap items-center gap-2 pt-2">
+
+        {groups.map(g=><span key={g.key} className={badge}>{all.filter(p=>p.status===g.key).length} · {zh?g.zh:g.en}</span>)}
+
+        <a className="inline-flex items-center gap-1 text-xs font-semibold text-violet-700 dark:text-violet-200 hover:underline ml-auto" href="https://scholar.google.com/citations?user=X63QcQoAAAAJ&hl=zh-TW" rel="noopener noreferrer" target="_blank"><GraduationCap size={14}/>{zh?'查看 Google Scholar 引用信息':'Citation data on Google Scholar'}<ExternalLink size={12}/></a>
+
+      </div>
+
+    </header>
+
+    <div className="flex flex-col md:flex-row gap-3 rounded-2xl border border-violet-200/70 dark:border-violet-400/20 bg-[#fcfaff] dark:bg-[#332749] p-3">
+
+      <label className="relative flex-1"><Search className="absolute top-3 left-3 text-violet-400" size={17}/><span className="sr-only">Search papers</span><input value={query} onChange={e=>setQuery(e.target.value)} placeholder={zh?'搜索标题、作者、关键词…':'Search title, authors, keywords…'} className="w-full rounded-xl border border-violet-200 dark:border-violet-400/25 bg-white dark:bg-[#241b36] py-2.5 pl-10 pr-3 text-sm text-primary outline-none focus:ring-2 focus:ring-violet-400"/></label>
+
+      <label className="text-sm"><span className="sr-only">Publication status</span><select value={group} onChange={e=>setGroup(e.target.value)} className="w-full md:w-52 rounded-xl border border-violet-200 dark:border-violet-400/25 bg-white dark:bg-[#241b36] p-2.5 text-sm text-primary focus:ring-2 focus:ring-violet-400"><option value="all">{zh?'全部研究成果':'All statuses'}</option>{groups.map(g=><option key={g.key} value={g.key}>{zh?g.zh:g.en}</option>)}</select></label>
+
+    </div>
+
+    {groups.filter(g=>group==='all'||group===g.key).map(g=>{
+
+      const items=matching.filter(p=>p.status===g.key).sort((a,b)=>b.year-a.year);
+
+      if(!items.length)return null;
+
+      return <section key={g.key} className="space-y-4" aria-label={zh?g.zh:g.en}>
+
+        <div className="flex items-center gap-3 border-b border-violet-200 dark:border-violet-400/30 pb-2"><h2 className="font-serif text-xl font-semibold text-primary">{zh?g.zh:g.en}</h2><span className="text-xs text-neutral-500">{items.length}</span></div>
+
+        <p className="text-xs text-neutral-500 dark:text-neutral-400">{zh?g.descZh:g.desc}</p>
+
+        {items.map(pub=>{
+
+          const meta=master.get(pub.id);
+
+          const typeLabel=pub.type==='journal'?(zh?'期刊 Journal':'Journal'):pub.type==='conference'?(zh?'会议 Conference':'Conference'):pub.status==='preprint'?'arXiv Preprint':(zh?'稿件 Manuscript':'Manuscript');
+
+          const statusLabel={published:zh?'已发表':'Published',accepted:zh?'已录用':'Accepted',preprint:zh?'预印本':'Public preprint',pending:zh?'等待结果':'Decision pending'}[g.key];
+
+          const description=zh?(meta?.summaryZh||pub.description):(meta?.summary||pub.description);
+
+          const keywords=zh?meta?.keywordsZh||meta?.keywords:meta?.keywords;
+
+          const thumb=meta?.preview||'/papers/figure1-placeholder.svg';
+
+          const isAbstractOpen=abstractOpen.includes(pub.id),isBibtexOpen=bibtexOpen.includes(pub.id);
+
+          const linkItems=[
+
+            {label:'DOI',href:pub.doi ? `https://doi.org/${pub.doi}` : ''},
+
+            {label:'arXiv',href:meta?.arxiv||''},
+
+            {label:zh?'论文页':'Paper',href:!pub.doi&&!meta?.arxiv?pub.url||'':''},
+
+            {label:'PDF',href:meta?.pdf||pub.pdfUrl||''},
+
+            {label:'Code',href:meta?.code||pub.code||''}
+
+          ].filter(l=>Boolean(l.href));
+
+          return <article key={pub.id} id={`paper-${pub.id}`} className="scroll-mt-24 overflow-hidden rounded-2xl border border-violet-200/80 dark:border-violet-400/25 bg-white dark:bg-[#342847] shadow-[0_9px_34px_-24px_rgba(86,54,137,.48)] transition hover:border-violet-400 dark:hover:border-violet-300/55">
+
+            <div className="p-4 sm:p-5 flex flex-col sm:flex-row gap-4 sm:gap-5">
+
+              <div className="shrink-0 sm:w-44 md:w-48">
+
+                <div className="overflow-hidden rounded-xl border border-violet-100 dark:border-violet-500/20 bg-[#f7f0fe] aspect-[4/3] relative">{["P1", "P2", "P3", "P4"].includes(meta?.id ?? "")
+
+                  ? <PaperMotionThumbnail paperId={meta?.id ?? ""} context="publications" />
+
+                  : <Image src={thumb} alt={`${pub.title} – thumbnail`} fill sizes="(max-width:640px) 100vw, 190px" className="object-cover" unoptimized/>}</div>
+
+              </div>
+
+              <div className="flex-1 min-w-0 space-y-2.5">
+
+                <div className="flex flex-wrap gap-2 items-center"><span className={badge}><BookOpen size={12} className="mr-1"/>{typeLabel}</span><span className={badge}>{statusLabel}</span><span className="ml-auto text-xs text-neutral-500">{pub.year}</span></div>
+
+                <h3 className="text-base sm:text-lg font-bold text-primary leading-snug">{pub.title}</h3>
+
+                <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">{pub.authors.map((author, index) => {
+                  const normalized = author.name.trim().replace(/\s+/g, ' ').toLowerCase();
+                  const isSelf = normalized === 'yuli liu' || normalized === 'liu, yuli';
+                  return (
+                    <span key={`${author.name}-${index}`}>
+                      {index > 0 ? ', ' : null}
+                      {isSelf ? (
+                        <strong className="font-bold text-primary">{author.name}</strong>
+                      ) : (
+                        author.name
+                      )}
+                    </span>
+                  );
+                })}</p>
+
+                <p className="text-sm font-medium text-violet-700 dark:text-violet-200">{pub.venue||pub.journal||pub.conference}</p>
+
+                {description&&<p className="text-sm leading-6 text-neutral-700 dark:text-neutral-200 italic">{description}</p>}
+
+                {!!keywords?.length&&<div className="flex flex-wrap gap-1.5">{keywords.slice(0,4).map(k=><span key={k} className="rounded-md bg-[#f2ecfb] dark:bg-[#48365e] px-2.5 py-1 text-[11px] text-[#63488b] dark:text-[#e4d2ff]">{k}</span>)}</div>}
+
+                <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
+
+                  {meta?.nodes.map(id=>{const i=nodes.findIndex(n=>n.id===id);return i>=0?<Link key={id} title={zh?nodes[i].title_zh:nodes[i].title} className="font-medium text-violet-700 dark:text-violet-200 hover:underline" href={`/research-map/#node=${id}`}><Network size={12} className="inline mr-1"/>N{String(i+1).padStart(2,'0')} ↗</Link>:null})}
+
+                </div>
+
+                <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-violet-100 dark:border-white/10">
+
+                  {pub.abstract&&<button onClick={()=>toggle(pub.id,'abstract')} aria-expanded={isAbstractOpen} className="inline-flex gap-1 items-center text-xs font-semibold text-violet-700 dark:text-violet-200 hover:underline"><FileText size={14}/>{isAbstractOpen?(zh?'收起摘要':'Hide Abstract'):(zh?'展开摘要':'Show Abstract')}</button>}
+
+                  {pub.bibtex&&<button onClick={()=>toggle(pub.id,'bib')} aria-expanded={isBibtexOpen} className="inline-flex gap-1 items-center text-xs font-semibold text-violet-700 dark:text-violet-200 hover:underline"><BookOpen size={14}/>{isBibtexOpen?(zh?'收起 BibTeX':'Hide BibTeX'):'Show BibTeX'}</button>}
+
+                  {pub.bibtex&&<button onClick={()=>copy(pub.id,pub.bibtex||'')} className="inline-flex gap-1 items-center text-xs font-semibold text-violet-700 dark:text-violet-200 hover:underline">{copied===pub.id?<Check size={14}/>:<Copy size={14}/>} {copied===pub.id?(zh?'已复制':'Copied'):'Copy BibTeX'}</button>}
+
+                  {linkItems.map(l=><a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" className="inline-flex gap-1 items-center text-xs font-semibold text-violet-700 dark:text-violet-200 hover:underline">{l.label}<ArrowUpRight size={12}/></a>)}
+
+                  {typeof meta?.citationCount==='number'&&!!meta.citationUrl&&<a className="text-xs font-semibold text-violet-700 dark:text-violet-200 hover:underline" href={meta.citationUrl} target="_blank" rel="noopener noreferrer">Cited by {meta.citationCount} ↗</a>}
+
+                </div>
+
+                {isAbstractOpen&&pub.abstract&&<div className="rounded-xl border border-violet-100 dark:border-violet-400/20 bg-[#f7f3ff] dark:bg-[#271e3a] p-4 text-sm text-neutral-700 dark:text-neutral-200 leading-7">{pub.abstract}</div>}
+
+                {isBibtexOpen&&pub.bibtex&&<pre className="whitespace-pre-wrap break-all rounded-xl bg-[#f7f3ff] dark:bg-[#271e3a] p-4 text-[11px] text-neutral-700 dark:text-neutral-200 overflow-auto">{pub.bibtex}</pre>}
+
+              </div>
+
+            </div>
+
+          </article>
+
+        })}
+
+      </section>
+
+    })}
+
+    {(group === 'all' || group === 'pending') && (!query || 'iclr 2027 under review double blind causal online decision research'.includes(query.toLowerCase()) || '双盲审稿 研究方向'.includes(query)) && <DoubleBlindPipeline/>}
+
+    {!matching.length && group !== 'all' && group !== 'pending' && <p className="text-sm text-neutral-500 py-12 text-center">{zh?'没有匹配的论文。':'No matching research outputs.'}</p>}
+
+  </section>;
+
+}

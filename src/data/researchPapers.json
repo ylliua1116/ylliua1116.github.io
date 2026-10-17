@@ -1,0 +1,321 @@
+[
+  {
+    "id": "P1",
+    "bibkey": "offloading",
+    "title": "Low-Altitude Task Offloading for UAV–USV Collaboration in Marine Edge-Enabled Networks",
+    "short": "UAV–USV Collaborative Offloading",
+    "shortZh": "无人机—无人艇协同卸载",
+    "author": "Yuli Liu and Minghui Dai and Chenglong Dou and Peichun Li and Yuan Wu and Li Ping Qian",
+    "year": 2025,
+    "venue": "AIoTC 2025 · Best Paper Award",
+    "status": "published",
+    "nodes": [
+      "cooperate",
+      "ocean",
+      "lowalt"
+    ],
+    "url": "https://doi.org/10.1109/AIoTC66747.2025.11198686",
+    "doi": "10.1109/AIoTC66747.2025.11198686",
+    "selected": true,
+    "preview": "/papers/P1-figure1-placeholder.svg",
+    "summary": "Formulates communication-aware UAV–USV task offloading as a Stackelberg game to coordinate computation and resource allocation in maritime edge networks.",
+    "summaryZh": "通过 Stackelberg 博弈建模海上 UAV–USV 通信感知任务卸载，协调边缘计算与资源分配。",
+    "entry": "inproceedings",
+    "booktitle": "AIoTC 2025",
+    "keywords": [
+      "Stackelberg games",
+      "UAV–USV",
+      "Edge offloading"
+    ],
+    "figureVerified": false,
+    "bibtexSource": "generated",
+    "citationCount": null,
+    "citationUrl": "",
+    "pdf": "",
+    "code": "",
+    "arxiv": "",
+    "abstract": "This paper addresses task offloading between heterogeneous UAVs and USVs in resource-constrained maritime edge networks. It models interactions between the cloud platform and unmanned agents using a Stackelberg game and derives coordination strategies for resource allocation and task acceptance. The study evaluates utility and allocation efficiency in simulated marine environments.",
+    "keywordsZh": [
+      "Stackelberg 博弈",
+      "UAV–USV",
+      "边缘卸载"
+    ]
+  },
+  {
+    "id": "P2",
+    "bibkey": "inspection",
+    "title": "PSO-Based Optimal Coverage Path Planning for Surface Defect Inspection of 3C Components With a Robotic Line Scanner",
+    "short": "Robotic Inspection Planning",
+    "shortZh": "机器人表面检测路径规划",
+    "author": "Hongpeng Chen and Shengzeng Huo and Muhammad Muddassir and Hoi-Yin Lee and Yuli Liu and Junxi Li and Anqing Duan and Pai Zheng and David Navarro-Alarcon",
+    "year": 2025,
+    "venue": "IEEE TIM 2025",
+    "status": "published",
+    "nodes": [
+      "ocean"
+    ],
+    "adjacent": true,
+    "url": "https://doi.org/10.1109/TIM.2025.3552466",
+    "doi": "10.1109/TIM.2025.3552466",
+    "selected": true,
+    "preview": "/papers/P2-figure1-placeholder.svg",
+    "summary": "Develops particle-swarm-based coverage planning for robotic line-scanner inspection of complex 3C component surfaces.",
+    "summaryZh": "采用粒子群优化设计机器人线扫检测路径，提高复杂 3C 零件表面覆盖规划的效率。",
+    "entry": "article",
+    "journal": "IEEE Transactions on Instrumentation and Measurement",
+    "keywords": [
+      "Robotic inspection",
+      "Coverage planning",
+      "Particle swarm optimization"
+    ],
+    "figureVerified": false,
+    "bibtexSource": "generated",
+    "citationCount": null,
+    "citationUrl": "",
+    "pdf": "",
+    "code": "",
+    "arxiv": "",
+    "abstract": "Robotic line-scanner inspection requires efficient coverage of complex three-dimensional component surfaces. This work studies the inspection viewpoints and associated path-planning problem, introducing particle swarm optimization to improve coverage planning for robotic surface-defect inspection of 3C components.",
+    "keywordsZh": [
+      "机器人检测",
+      "覆盖路径",
+      "粒子群优化"
+    ]
+  },
+  {
+    "id": "P3",
+    "bibkey": "semantic",
+    "title": "Dependency-Aware HARQ and Link Adaptation for Wireless Transmission of Open-Vocabulary Scene Graphs",
+    "short": "Dependency-Aware Semantic HARQ",
+    "shortZh": "依赖感知语义 HARQ",
+    "author": "Yuli Liu and Jiacheng Ruan and Caiming Sun",
+    "year": 2026,
+    "venue": "arXiv:2608.08110 · Public preprint; IEEE TWC decision pending",
+    "status": "preprint",
+    "nodes": [
+      "communicate",
+      "adapt"
+    ],
+    "url": "https://arxiv.org/abs/2608.08110",
+    "selected": true,
+    "preview": "/papers/P3-figure1-placeholder.svg",
+    "summary": "Models semantic packet prerequisites and jointly adapts HARQ reliability, modulation, and transmit power under latency and energy budgets.",
+    "summaryZh": "利用语义数据包的先决依赖关系，在时延和能量约束下联合设计 HARQ 可靠性、调制编码与功率。",
+    "entry": "misc",
+    "keywords": [
+      "Semantic communication",
+      "HARQ",
+      "Packet dependencies"
+    ],
+    "figureVerified": false,
+    "bibtexSource": "generated",
+    "citationCount": null,
+    "citationUrl": "",
+    "pdf": "https://arxiv.org/pdf/2608.08110",
+    "code": "",
+    "arxiv": "https://arxiv.org/abs/2608.08110",
+    "abstract": "Open-vocabulary scene-graph transmission has semantic packet dependencies: some triplets can only be interpreted if prerequisite vocabulary information is recovered. This work formulates dependency-aware distortion and adapts HARQ depth, modulation and coding, and transmit power subject to wireless latency and energy budgets.",
+    "keywordsZh": [
+      "语义通信",
+      "HARQ",
+      "数据包依赖"
+    ]
+  },
+  {
+    "id": "P4",
+    "bibkey": "causal",
+    "title": "Online Causal Configuration for Networked Systems via Doubly Robust Steady-State Learning",
+    "short": "Causal Configuration & CAUSAL-UCB",
+    "shortZh": "因果配置与 CAUSAL-UCB",
+    "author": "Yuli Liu and Zhiheng Zhang",
+    "year": 2026,
+    "venue": "NeurIPS 2026 · Accepted",
+    "status": "accepted",
+    "nodes": [
+      "identify",
+      "decide",
+      "adapt"
+    ],
+    "selected": true,
+    "preview": "/papers/P4-figure1-placeholder.svg",
+    "summary": "Connects interference-aware exposure modeling, doubly robust evaluation, and online selection for black-box steady-state network configuration.",
+    "summaryZh": "贯通网络干扰暴露建模、双重稳健评估和在线选择，实现黑盒网络稳态配置的因果可靠决策。",
+    "entry": "inproceedings",
+    "url": "https://neurips.cc/Downloads/2026",
+    "booktitle": "Advances in Neural Information Processing Systems 2026",
+    "keywords": [
+      "Causal inference",
+      "Network interference",
+      "Online optimization"
+    ],
+    "figureVerified": false,
+    "bibtexSource": "generated",
+    "citationCount": null,
+    "citationUrl": "",
+    "pdf": "",
+    "code": "",
+    "arxiv": "",
+    "abstract": "Black-box networked controllers expose delayed steady-state telemetry and interacting local actions, complicating conventional causal evaluation. This work develops CAUSAL-UCB, linking interference-aware exposures, doubly robust estimators, confidence certificates, and optimistic online selection to improve steady-state network configurations.",
+    "keywordsZh": [
+      "因果推断",
+      "网络干扰",
+      "在线优化"
+    ]
+  },
+  {
+    "id": "M1",
+    "bibkey": "fedppo",
+    "title": "Federated PPO for Cooperative Sensing Control in Maritime UAV–USV Networks",
+    "short": "Federated PPO for Maritime Sensing",
+    "shortZh": "海事协同感知的联邦 PPO",
+    "author": "Yuli Liu and Xiaojuan Zhang",
+    "year": 2026,
+    "venue": "IEEE TVT · Decision pending",
+    "status": "pending",
+    "nodes": [
+      "cooperate",
+      "adapt",
+      "ocean",
+      "lowalt"
+    ],
+    "selected": false,
+    "summary": "Investigates federated reinforcement-learning coordination of maritime sensing under heterogeneous UAV–USV constraints.",
+    "summaryZh": "研究在异构 UAV–USV 约束下利用联邦强化学习协调海洋协同感知。",
+    "entry": "unpublished",
+    "keywords": [
+      "Federated RL",
+      "Maritime sensing",
+      "Multi-agent control"
+    ],
+    "preview": "/papers/M1-figure1-placeholder.svg",
+    "figureVerified": false,
+    "bibtexSource": "generated",
+    "citationCount": null,
+    "citationUrl": "",
+    "pdf": "",
+    "code": "",
+    "arxiv": "",
+    "abstract": "",
+    "keywordsZh": [
+      "联邦强化学习",
+      "海洋感知",
+      "多智能体控制"
+    ]
+  },
+  {
+    "id": "M2",
+    "bibkey": "hff",
+    "title": "Hierarchical Federated Fusion: A Robust Cooperative Sensing Framework for Maritime IoT",
+    "short": "Hierarchical Federated Fusion",
+    "shortZh": "层次联邦融合",
+    "author": "Yuli Liu and Xiaojuan Zhang",
+    "year": 2026,
+    "venue": "IEEE Internet of Things Journal · Decision pending",
+    "status": "pending",
+    "nodes": [
+      "cooperate",
+      "adapt",
+      "ocean"
+    ],
+    "selected": false,
+    "summary": "Studies hierarchical federated fusion to improve cooperative maritime sensing under heterogeneous or unreliable updates.",
+    "summaryZh": "探索面对客户端异质性与不可靠更新时的层次联邦融合与海洋协作感知。",
+    "entry": "unpublished",
+    "keywords": [
+      "Federated learning",
+      "Robust aggregation",
+      "Maritime IoT"
+    ],
+    "preview": "/papers/M2-figure1-placeholder.svg",
+    "figureVerified": false,
+    "bibtexSource": "generated",
+    "citationCount": null,
+    "citationUrl": "",
+    "pdf": "",
+    "code": "",
+    "arxiv": "",
+    "abstract": "",
+    "keywordsZh": [
+      "联邦学习",
+      "鲁棒聚合",
+      "海洋物联网"
+    ]
+  },
+  {
+    "id": "M3",
+    "bibkey": "maritime_review",
+    "title": "Multi-Node Cooperative Sensing in Maritime Environments: Challenges and Frontier Technologies",
+    "short": "Maritime Cooperative Sensing Survey",
+    "shortZh": "海洋多节点协同感知综述",
+    "author": "Yuli Liu and Xiaojuan Zhang",
+    "year": 2026,
+    "venue": "IEEE Sensors Journal · Decision pending",
+    "status": "pending",
+    "nodes": [
+      "cooperate",
+      "ocean"
+    ],
+    "selected": false,
+    "summary": "Organizes challenges and emerging approaches for sensing across heterogeneous maritime agents and links.",
+    "summaryZh": "梳理跨异构海洋智能体与链路协同感知的挑战、方法和发展方向。",
+    "entry": "unpublished",
+    "keywords": [
+      "Cooperative sensing",
+      "Maritime IoT",
+      "Survey"
+    ],
+    "preview": "/papers/M3-figure1-placeholder.svg",
+    "figureVerified": false,
+    "bibtexSource": "generated",
+    "citationCount": null,
+    "citationUrl": "",
+    "pdf": "",
+    "code": "",
+    "arxiv": "",
+    "abstract": "",
+    "keywordsZh": [
+      "协同感知",
+      "海洋物联网",
+      "综述"
+    ]
+  },
+  {
+    "id": "M4",
+    "bibkey": "qkd",
+    "title": "Cost-Efficient End-to-End Key Delivery in Heterogeneous Space–Air–Ground–Sea QKD Networks",
+    "short": "SAG-S Quantum Key Delivery",
+    "shortZh": "空天地海量子密钥交付",
+    "author": "Yuli Liu and Di Wu",
+    "year": 2026,
+    "venue": "IEEE TCOM · Decision pending",
+    "status": "pending",
+    "nodes": [
+      "communicate",
+      "decide",
+      "sags"
+    ],
+    "selected": false,
+    "summary": "Studies cost-aware end-to-end quantum key delivery across heterogeneous space–air–ground–sea links.",
+    "summaryZh": "研究空天地海异构链路上端到端量子密钥交付的成本感知优化。",
+    "entry": "unpublished",
+    "keywords": [
+      "Quantum key distribution",
+      "SAG-S networks",
+      "Routing"
+    ],
+    "preview": "/papers/M4-figure1-placeholder.svg",
+    "figureVerified": false,
+    "bibtexSource": "generated",
+    "citationCount": null,
+    "citationUrl": "",
+    "pdf": "",
+    "code": "",
+    "arxiv": "",
+    "abstract": "",
+    "keywordsZh": [
+      "量子密钥分发",
+      "空天地海网络",
+      "路由"
+    ]
+  }
+]
