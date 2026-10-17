@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1050" viewBox="0 0 1536 1050" role="img" aria-label="Nine-node academic research trajectory">
+<defs><linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FEFDFF"/><stop offset="1" stop-color="#F9F5FF"/></linearGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".9" fill="#E8E0F2" /></pattern>
+<filter id="shadow" x="-15%" y="-25%" width="130%" height="150%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#6A498B" flood-opacity=".10"/></filter>
+<marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#9785B0" stroke-width="1.6"/></marker>
+</defs>
+<rect width="1536" height="1050" rx="24" fill="url(#paper)"/>
+<rect width="1536" height="1050" rx="24" fill="url(#dots)" opacity=".58"/>
+<rect x="35" y="32" width="9" height="74" rx="5" fill="#7752B3"/>
+<text x="65" y="67" font-size="31" font-weight="700" font-family="Georgia, serif" fill="#2D1F40">From causal evidence to cooperative intelligence</text>
+<text x="65" y="99" font-family="Arial, sans-serif" font-size="17" fill="#7B688D">METHODS &amp; DECISIONS   /   COMMUNICATION &amp; COOPERATION   /   SYSTEM VALIDATION</text>
+<text x="1460" y="71" text-anchor="end" font-family="Arial, sans-serif" font-weight="700" font-size="15" letter-spacing="2" fill="#6B3BB4">09 NODES · 03 STAGES</text>
+<rect x="35" y="157" width="1466" height="256" rx="22" fill="#F5EEFF" fill-opacity=".65" stroke="#D6C4F0" stroke-width="1.5"/>
+<circle cx="78" cy="205" r="22" fill="#6B3BB4"/>
+<text x="78" y="212" text-anchor="middle" fill="white" font-family="Arial" font-size="20" font-weight="700">1</text>
+<text x="48" y="258" font-family="Arial" font-weight="700" font-size="17" fill="#6B3BB4">CAUSAL</text>
+<text x="48" y="304" font-family="Arial, sans-serif" font-size="16" fill="#71647B">From evidence</text>
+<text x="48" y="328" font-family="Arial, sans-serif" font-size="16" fill="#71647B">to decisions</text>
+<rect x="185" y="229" width="339" height="190" rx="17" fill="#FFFFFF" stroke="#D6C4F0" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="202" y="246" width="50" height="30" rx="9" fill="#F5EEFF"/>
+<text x="227" y="267" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#6B3BB4">N01</text>
+<text x="205" y="308" font-family="Arial, Noto Sans CJK SC, sans-serif" font-weight="700" font-size="19" fill="#2E2540">Causal identification</text>
+<text x="205" y="336" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#7B6B85">Interference · evaluation</text>
+<rect x="205" y="361" width="48" height="28" rx="8" fill="#F5EEFF" stroke="#D6C4F0"/>
+<text x="229" y="380" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#6B3BB4">P4</text>
+<rect x="261" y="361" width="48" height="28" rx="8" fill="#F5EEFF" stroke="#D6C4F0"/>
+<text x="285" y="380" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#6B3BB4">R02</text>
+<rect x="317" y="361" width="48" height="28" rx="8" fill="#F5EEFF" stroke="#D6C4F0"/>
+<text x="341" y="380" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#6B3BB4">R04</text>
+<path d="M 535 326 H 606" fill="none" stroke="#8978A1" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="624" y="229" width="339" height="190" rx="17" fill="#FFFFFF" stroke="#D6C4F0" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="641" y="246" width="50" height="30" rx="9" fill="#F5EEFF"/>
+<text x="666" y="267" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#6B3BB4">N02</text>
+<text x="644" y="308" font-family="Arial, Noto Sans CJK SC, sans-serif" font-weight="700" font-size="19" fill="#2E2540">Candidate proposals</text>
+<text x="644" y="336" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#7B6B85">Evidence-aware selection</text>
+<rect x="644" y="361" width="48" height="28" rx="8" fill="#F5EEFF" stroke="#D6C4F0"/>
+<text x="668" y="380" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#6B3BB4">R04</text>
+<path d="M 974 326 H 1045" fill="none" stroke="#8978A1" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="1063" y="229" width="339" height="190" rx="17" fill="#FFFFFF" stroke="#D6C4F0" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="1080" y="246" width="50" height="30" rx="9" fill="#F5EEFF"/>
+<text x="1105" y="267" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#6B3BB4">N03</text>
+<text x="1083" y="308" font-family="Arial, Noto Sans CJK SC, sans-serif" font-weight="700" font-size="19" fill="#2E2540">Reliable decisions</text>
+<text x="1083" y="336" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#7B6B85">Regret · uncertainty</text>
+<rect x="1083" y="361" width="48" height="28" rx="8" fill="#F5EEFF" stroke="#D6C4F0"/>
+<text x="1107" y="380" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#6B3BB4">P4</text>
+<rect x="1139" y="361" width="48" height="28" rx="8" fill="#F5EEFF" stroke="#D6C4F0"/>
+<text x="1163" y="380" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#6B3BB4">M4</text>
+<rect x="1195" y="361" width="48" height="28" rx="8" fill="#F5EEFF" stroke="#D6C4F0"/>
+<text x="1219" y="380" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#6B3BB4">R01</text>
+<rect x="1251" y="361" width="48" height="28" rx="8" fill="#F5EEFF" stroke="#D6C4F0"/>
+<text x="1275" y="380" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#6B3BB4">R02</text>
+<path d="M 798 433 V 494" fill="none" stroke="#9981B5" stroke-width="2.4" stroke-dasharray="7 7" marker-end="url(#arr)"/>
+<rect x="35" y="440" width="1466" height="256" rx="22" fill="#EDF5FC" fill-opacity=".65" stroke="#C6DCF0" stroke-width="1.5"/>
+<circle cx="78" cy="488" r="22" fill="#3973AC"/>
+<text x="78" y="495" text-anchor="middle" fill="white" font-family="Arial" font-size="20" font-weight="700">2</text>
+<text x="48" y="541" font-family="Arial" font-weight="700" font-size="17" fill="#3973AC">COOPERATE</text>
+<text x="48" y="587" font-family="Arial, sans-serif" font-size="16" fill="#71647B">From decisions</text>
+<text x="48" y="611" font-family="Arial, sans-serif" font-size="16" fill="#71647B">to coordination</text>
+<rect x="185" y="512" width="339" height="190" rx="17" fill="#FFFFFF" stroke="#C6DCF0" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="202" y="529" width="50" height="30" rx="9" fill="#EDF5FC"/>
+<text x="227" y="550" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#3973AC">N04</text>
+<text x="205" y="591" font-family="Arial, Noto Sans CJK SC, sans-serif" font-weight="700" font-size="19" fill="#2E2540">Multi-agent coordination</text>
+<text x="205" y="619" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#7B6B85">Heterogeneous agents</text>
+<rect x="205" y="644" width="48" height="28" rx="8" fill="#EDF5FC" stroke="#C6DCF0"/>
+<text x="229" y="663" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#3973AC">P1</text>
+<rect x="261" y="644" width="48" height="28" rx="8" fill="#EDF5FC" stroke="#C6DCF0"/>
+<text x="285" y="663" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#3973AC">M1</text>
+<rect x="317" y="644" width="48" height="28" rx="8" fill="#EDF5FC" stroke="#C6DCF0"/>
+<text x="341" y="663" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#3973AC">M2</text>
+<rect x="373" y="644" width="48" height="28" rx="8" fill="#EDF5FC" stroke="#C6DCF0"/>
+<text x="397" y="663" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#3973AC">M3</text>
+<path d="M 535 609 H 606" fill="none" stroke="#8978A1" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="624" y="512" width="339" height="190" rx="17" fill="#FFFFFF" stroke="#C6DCF0" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="641" y="529" width="50" height="30" rx="9" fill="#EDF5FC"/>
+<text x="666" y="550" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#3973AC">N05</text>
+<text x="644" y="591" font-family="Arial, Noto Sans CJK SC, sans-serif" font-weight="700" font-size="17" fill="#2E2540">Decision-relevant signals</text>
+<text x="644" y="619" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#7B6B85">Semantic HARQ · task value</text>
+<rect x="644" y="644" width="48" height="28" rx="8" fill="#EDF5FC" stroke="#C6DCF0"/>
+<text x="668" y="663" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#3973AC">P3</text>
+<rect x="700" y="644" width="48" height="28" rx="8" fill="#EDF5FC" stroke="#C6DCF0"/>
+<text x="724" y="663" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#3973AC">M4</text>
+<path d="M 974 609 H 1045" fill="none" stroke="#8978A1" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="1063" y="512" width="339" height="190" rx="17" fill="#FFFFFF" stroke="#C6DCF0" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="1080" y="529" width="50" height="30" rx="9" fill="#EDF5FC"/>
+<text x="1105" y="550" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#3973AC">N06</text>
+<text x="1083" y="591" font-family="Arial, Noto Sans CJK SC, sans-serif" font-weight="700" font-size="17" fill="#2E2540">Interference &amp; adaptation</text>
+<text x="1083" y="619" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#7B6B85">Delayed feedback · drift</text>
+<rect x="1083" y="644" width="48" height="28" rx="8" fill="#EDF5FC" stroke="#C6DCF0"/>
+<text x="1107" y="663" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#3973AC">P3</text>
+<rect x="1139" y="644" width="48" height="28" rx="8" fill="#EDF5FC" stroke="#C6DCF0"/>
+<text x="1163" y="663" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#3973AC">P4</text>
+<rect x="1195" y="644" width="48" height="28" rx="8" fill="#EDF5FC" stroke="#C6DCF0"/>
+<text x="1219" y="663" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#3973AC">M1</text>
+<rect x="1251" y="644" width="48" height="28" rx="8" fill="#EDF5FC" stroke="#C6DCF0"/>
+<text x="1275" y="663" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#3973AC">M2</text>
+<rect x="1307" y="644" width="48" height="28" rx="8" fill="#EDF5FC" stroke="#C6DCF0"/>
+<text x="1331" y="663" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#3973AC">R01</text>
+<path d="M 798 716 V 777" fill="none" stroke="#9981B5" stroke-width="2.4" stroke-dasharray="7 7" marker-end="url(#arr)"/>
+<rect x="35" y="723" width="1466" height="256" rx="22" fill="#FFF4ED" fill-opacity=".65" stroke="#F2D4C2" stroke-width="1.5"/>
+<circle cx="78" cy="771" r="22" fill="#B06A40"/>
+<text x="78" y="778" text-anchor="middle" fill="white" font-family="Arial" font-size="20" font-weight="700">3</text>
+<text x="48" y="824" font-family="Arial" font-weight="700" font-size="17" fill="#B06A40">DEPLOY</text>
+<text x="48" y="870" font-family="Arial, sans-serif" font-size="16" fill="#71647B">From methods</text>
+<text x="48" y="894" font-family="Arial, sans-serif" font-size="16" fill="#71647B">to deployment</text>
+<rect x="185" y="795" width="339" height="190" rx="17" fill="#FFFFFF" stroke="#F2D4C2" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="202" y="812" width="50" height="30" rx="9" fill="#FFF4ED"/>
+<text x="227" y="833" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#B06A40">N07</text>
+<text x="205" y="874" font-family="Arial, Noto Sans CJK SC, sans-serif" font-weight="700" font-size="17" fill="#2E2540">Robotics &amp; maritime sensing</text>
+<text x="205" y="902" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#7B6B85">Sensing · inspection · UAV–USV</text>
+<rect x="205" y="927" width="48" height="28" rx="8" fill="#FFF4ED" stroke="#F2D4C2"/>
+<text x="229" y="946" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#B06A40">P1</text>
+<rect x="261" y="927" width="48" height="28" rx="8" fill="#FFF4ED" stroke="#F2D4C2"/>
+<text x="285" y="946" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#B06A40">P2</text>
+<rect x="317" y="927" width="48" height="28" rx="8" fill="#FFF4ED" stroke="#F2D4C2"/>
+<text x="341" y="946" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#B06A40">M1</text>
+<rect x="373" y="927" width="48" height="28" rx="8" fill="#FFF4ED" stroke="#F2D4C2"/>
+<text x="397" y="946" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#B06A40">M2</text>
+<path d="M 535 892 H 606" fill="none" stroke="#8978A1" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="624" y="795" width="339" height="190" rx="17" fill="#FFFFFF" stroke="#F2D4C2" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="641" y="812" width="50" height="30" rx="9" fill="#FFF4ED"/>
+<text x="666" y="833" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#B06A40">N08</text>
+<text x="644" y="874" font-family="Arial, Noto Sans CJK SC, sans-serif" font-weight="700" font-size="19" fill="#2E2540">Low-altitude networks</text>
+<text x="644" y="902" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#7B6B85">Edge computing · mobility</text>
+<rect x="644" y="927" width="48" height="28" rx="8" fill="#FFF4ED" stroke="#F2D4C2"/>
+<text x="668" y="946" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#B06A40">P1</text>
+<rect x="700" y="927" width="48" height="28" rx="8" fill="#FFF4ED" stroke="#F2D4C2"/>
+<text x="724" y="946" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#B06A40">M1</text>
+<path d="M 974 892 H 1045" fill="none" stroke="#8978A1" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="1063" y="795" width="339" height="190" rx="17" fill="#FFFFFF" stroke="#F2D4C2" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="1080" y="812" width="50" height="30" rx="9" fill="#FFF4ED"/>
+<text x="1105" y="833" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#B06A40">N09</text>
+<text x="1083" y="874" font-family="Arial, Noto Sans CJK SC, sans-serif" font-weight="700" font-size="19" fill="#2E2540">SAG-S systems</text>
+<text x="1083" y="902" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#7B6B85">Cross-domain intelligence</text>
+<rect x="1083" y="927" width="48" height="28" rx="8" fill="#FFF4ED" stroke="#F2D4C2"/>
+<text x="1107" y="946" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#B06A40">M4</text>
+<rect x="1139" y="927" width="48" height="28" rx="8" fill="#FFF4ED" stroke="#F2D4C2"/>
+<text x="1163" y="946" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#B06A40">R01</text>
+<text x="48" y="1031" font-family="Arial" font-size="14" fill="#7F6F8B">P / M  Publications &amp; manuscripts    ·    R  Research themes</text>
+<text x="1480" y="1031" text-anchor="end" font-family="Arial" font-size="14" letter-spacing="1.5" fill="#A38FB9">YULI LIU · RESEARCH ROADMAP</text>
+</svg>

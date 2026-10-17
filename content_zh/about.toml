@@ -1,0 +1,28 @@
+type = "about"
+title = "关于我"
+
+[profile]
+research_interests = [
+  "因果决策学习与在线优化",
+  "通信感知协同智能",
+  "异构无线网络"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+title = "关于我"
+source = "bio.md"
+
+[[sections]]
+id = "featured_publications"
+type = "publications"
+title = "精选论文"
+filter = "selected"
+limit = 7
+
+[[sections]]
+id = "news"
+type = "list"
+title = "最新动态"
+source = "news.toml"

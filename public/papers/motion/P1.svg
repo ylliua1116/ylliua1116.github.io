@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="ttl desc"><title id="ttl">Maritime UAV-USV offloading</title><desc id="desc">Drone data packets travel to a surface vessel and onward to a maritime edge station. Conceptual animation, not original experimental data.</desc>
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fcfbff"/><stop offset=".58" stop-color="#f5f1ff"/><stop offset="1" stop-color="#e8f1ff"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#c7b4fb" stop-opacity=".52"/><stop offset="1" stop-color="#c7b4fb" stop-opacity="0"/></radialGradient>
+ <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9886e7"/><stop offset=".55" stop-color="#6e5ac1"/><stop offset="1" stop-color="#453c91"/></linearGradient>
+ <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b1f4e9"/><stop offset="1" stop-color="#46b8b4"/></linearGradient>
+ <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d1eafb"/><stop offset="1" stop-color="#acd8ed"/></linearGradient>
+ <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9dc"/><stop offset="1" stop-color="#ed86b5"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#f1ebff" stop-opacity=".74"/></linearGradient>
+ <pattern id="grid" width="27" height="27" patternUnits="userSpaceOnUse"><path d="M27 0H0V27" fill="none" stroke="#9483ca" stroke-opacity=".085" stroke-width=".8"/><circle cx="1" cy="1" r=".7" fill="#8e79cb" opacity=".20"/></pattern>
+ <filter id="shadow" x="-40%" y="-50%" width="180%" height="220%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6650aa" flood-opacity=".17"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+ <filter id="beam"><feGaussianBlur stdDeviation="3.2"/></filter>
+ <marker id="arrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 7 3.5 0 7Z" fill="#826acc"/></marker>
+ <marker id="retryArrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 7 3.5 0 7Z" fill="#e58da9"/></marker>
+</defs>
+<style><![CDATA[
+@keyframes slide {to{stroke-dashoffset:-44}}
+@keyframes drift {0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes swish {0%,100%{transform:translateX(-8px)}50%{transform:translateX(8px)}}
+@keyframes glow {0%,100%{opacity:.38}50%{opacity:.95}}
+@keyframes ring {0%{opacity:.65;transform:scale(.7)}100%{opacity:0;transform:scale(1.55)}}
+@keyframes turn {to{transform:rotate(360deg)}}
+@keyframes scanning {0%,10%{transform:translateX(0);opacity:.12}22%{opacity:1}75%{transform:translateX(95px);opacity:.95}85%,100%{transform:translateX(95px);opacity:0}}
+@keyframes trace {0%,8%{stroke-dashoffset:540}65%,86%{stroke-dashoffset:0}100%{stroke-dashoffset:540}}
+@keyframes traceSmall {0%,12%{stroke-dashoffset:180}75%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:180}}
+@keyframes breathe {0%,100%{transform:scale(.96);opacity:.62}50%{transform:scale(1.13);opacity:1}}
+@keyframes twinkle {0%,100%{opacity:.35}50%{opacity:1}}
+.dash{animation:slide 3.5s linear infinite}.slowdash{animation:slide 7s linear infinite}
+.drift{animation:drift 3.4s ease-in-out infinite}.drift2{animation:drift 5s ease-in-out -.7s infinite}
+.sea{animation:swish 5.5s ease-in-out infinite}.sea2{animation:swish 7s ease-in-out -2s infinite}
+.glow{animation:glow 2.4s ease-in-out infinite}.spin{animation:turn .6s linear infinite;transform-box:fill-box;transform-origin:center}
+.ring{animation:ring 2.8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.ring2{animation:ring 2.8s ease-out 1.4s infinite;transform-box:fill-box;transform-origin:center}
+.beam{animation:scanning 5s ease-in-out infinite}
+.trace{stroke-dasharray:540;stroke-dashoffset:540;animation:trace 7s ease-in-out infinite}
+.tracesmall{stroke-dasharray:180;stroke-dashoffset:180;animation:traceSmall 6s ease-in-out infinite}
+.breathe{animation:breathe 2.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.twinkle{animation:twinkle 3.5s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){
+ .dash,.slowdash,.drift,.drift2,.sea,.sea2,.glow,.spin,.ring,.ring2,.beam,.trace,.tracesmall,.breathe,.twinkle{animation:none!important}
+ .trace,.tracesmall{stroke-dashoffset:0!important}animateMotion,animate{display:none!important}
+}
+]]></style>
+<rect x="0" y="0" width="400" height="300" rx="20" fill="url(#paper)"/>
+<rect width="400" height="300" rx="20" fill="url(#grid)"/>
+<ellipse cx="315" cy="48" rx="136" ry="100" fill="url(#halo)" opacity=".56"/>
+<rect x="9" y="9" width="382" height="282" rx="15" fill="none" stroke="#baa9ef" stroke-opacity=".35"/>
+
+<!-- Atmospheric layers and layered moving sea -->
+<path d="M0 212C65 189 91 223 149 204S269 215 321 203 385 208 400 198V300H0Z" fill="url(#blue)" opacity=".92"/>
+<path class="sea" d="M-15 236Q18 226 50 236T115 236T180 236T245 236T310 236T375 236T440 236" fill="none" stroke="#5eabc8" stroke-opacity=".7" stroke-width="2.6"/>
+<path class="sea2" d="M-15 256Q28 246 71 256T157 256T243 256T329 256T415 256" fill="none" stroke="#a0cde6" stroke-width="2.8"/>
+<path class="sea" d="M-15 277Q25 270 65 277T145 277T225 277T305 277T385 277T465 277" fill="none" stroke="#d8edf7" stroke-width="2"/>
+<!-- islands -->
+<path d="M315 216Q341 195 370 206T420 205V240H315Z" fill="#d9e9ec" opacity=".8"/>
+<!-- circular radar rings -->
+<g stroke="#9583d5" stroke-opacity=".26" stroke-width="1.7" fill="none"><circle class="ring" cx="115" cy="86" r="44"/><circle class="ring2" cx="115" cy="86" r="44"/></g>
+<!-- dynamic arc communication links -->
+<path d="M130 108Q164 137 202 182" stroke="#ab99f0" stroke-opacity=".3" stroke-width="8" fill="none"/>
+<path class="dash" d="M130 108Q164 137 202 182" stroke="#705ac3" stroke-width="2.8" stroke-dasharray="6 8" fill="none" marker-end="url(#arrow)"/>
+<path d="M241 195Q288 155 335 139" stroke="#99dfd9" stroke-opacity=".4" stroke-width="9" fill="none"/>
+<path class="dash" d="M241 195Q288 155 335 139" stroke="#3eaaa9" stroke-width="3" stroke-dasharray="7 8" fill="none"/>
+<circle r="6" fill="#8c78dc" stroke="#fff" stroke-width="2"><animateMotion path="M130 108Q164 137 202 182" dur="3.5s" repeatCount="indefinite"/></circle>
+<circle r="5.5" fill="#38b7ad" stroke="#fff" stroke-width="2"><animateMotion path="M241 195Q288 155 335 139" dur="3.1s" begin="-1s" repeatCount="indefinite"/></circle>
+<!-- UAV detailed quadcopter -->
+<g class="drift" filter="url(#shadow)">
+ <path d="M83 80L59 65M122 80L147 65M83 91L63 108M122 91L145 110" stroke="#51479a" stroke-width="5" stroke-linecap="round"/>
+ <circle cx="60" cy="64" r="11" fill="#efeaff" stroke="#7665bd" stroke-width="3"/><circle cx="146" cy="64" r="11" fill="#efeaff" stroke="#7665bd" stroke-width="3"/>
+ <circle cx="64" cy="108" r="9" fill="#efeaff" stroke="#7665bd" stroke-width="3"/><circle cx="142" cy="109" r="9" fill="#efeaff" stroke="#7665bd" stroke-width="3"/>
+ <g class="spin" fill="none" stroke="#ab9ce8" stroke-width="2.2" stroke-linecap="round"><path d="M42 64h36M60 46v36"/><path d="M128 64h36M146 46v36"/></g>
+ <rect x="83" y="73" width="42" height="23" rx="9" fill="url(#purple)" stroke="#50439a"/>
+ <path d="M94 96l-3 9m23-9 3 9" stroke="#574aa3" stroke-width="3" stroke-linecap="round"/>
+ <circle cx="103" cy="89" r="6" fill="#e3d6ff"/><circle cx="103" cy="89" r="3" fill="#49c6bb"/>
+</g>
+<!-- USV detailed, 3D hull -->
+<g class="drift2" filter="url(#shadow)">
+ <path d="M158 207L253 207 237 236 178 235Z" fill="#3d6388" stroke="#355a80" stroke-width="2"/>
+ <path d="M164 209h86" stroke="#a3c8e3" stroke-width="2"/>
+ <path d="M184 187h47l6 20h-58z" fill="url(#glass)" stroke="#789abc" stroke-width="2"/>
+ <rect x="191" y="192" width="28" height="11" rx="3" fill="#99b9d3"/><path d="M207 187v-22" stroke="#5c6eaf" stroke-width="2"/>
+ <circle cx="207" cy="164" r="4.5" fill="#b5a3fa" class="glow"/>
+ <path d="M224 178h18" stroke="#677ca3" stroke-width="2"/><rect x="233" y="168" width="13" height="15" rx="3" fill="#7163ae"/>
+ <path d="M175 240q10-5 20 0t20 0t19 0" stroke="#fff" stroke-width="3" opacity=".8" fill="none"/>
+</g>
+<!-- Shore edge servers, richer rack detail -->
+<g filter="url(#shadow)">
+ <rect x="320" y="72" width="63" height="103" rx="11" fill="url(#glass)" stroke="#8a77d0" stroke-width="2.3"/>
+ <rect x="328" y="82" width="47" height="25" rx="5" fill="#ccc2fa"/>
+ <rect x="328" y="112" width="47" height="25" rx="5" fill="#ded6ff"/>
+ <rect x="328" y="142" width="47" height="23" rx="5" fill="#d9eafa"/>
+ <g fill="#6d59b8"><rect x="335" y="89" width="26" height="3" rx="1.5"/><rect x="335" y="119" width="26" height="3" rx="1.5"/><rect x="335" y="148" width="26" height="3" rx="1.5"/></g>
+ <g fill="#46baad"><circle cx="367" cy="97" r="3" class="glow"/><circle cx="367" cy="127" r="3" class="glow"/><circle cx="367" cy="157" r="3" class="glow"/></g>
+ <path d="M351 72v-14m-11 8q11-13 22 0m-28-6q17-19 34 0" stroke="#6f65b9" stroke-width="2" fill="none" stroke-linecap="round"/>
+</g>
+<!-- luminous small task buffers -->
+<rect x="147" y="146" width="21" height="16" rx="4" fill="#eeebff" stroke="#a692e5" opacity=".9"/>
+<path d="M152 151h11m-11 5h8" stroke="#866dd0" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

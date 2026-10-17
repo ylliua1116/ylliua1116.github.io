@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1410" width="1600" height="1410">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fcfaff"/><stop offset="1" stop-color="#f0eafd"/></linearGradient></defs>
+<rect x="0" y="0" width="1600" height="1410" rx="28" fill="url(#bg)" stroke="none" stroke-width="1"/>
+<circle cx="1490" cy="30" r="300" fill="#dfd0f4" opacity=".25"/>
+<text x="74" y="72" fill="#72519c" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="bold">YULI LIU   /   RESEARCH FRAMEWORK</text>
+<text x="74" y="136" fill="#302044" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="47" font-weight="bold">从因果决策到可信网络智能</text>
+<text x="76" y="181" fill="#6b587e" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="normal">九个研究节点 · 三个阶段 · 论文与在投稿件</text>
+<rect x="60" y="220" width="478" height="565" rx="22" fill="#fffcff" stroke="#dbcaed" stroke-width="2"/>
+<rect x="78" y="239" width="42" height="42" rx="21" fill="#f0e7fa" stroke="#ceb4e8" stroke-width="1"/>
+<text x="99" y="267" fill="#633e90" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="bold" text-anchor="middle">01</text>
+<text x="136" y="269" fill="#412957" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="bold">因果决策</text>
+<rect x="79" y="303" width="440" height="131" rx="16" fill="#f8f3fc" stroke="#e3d6ef" stroke-width="1"/>
+<rect x="79" y="303" width="5" height="131" rx="2" fill="#9876be" stroke="none" stroke-width="1"/>
+<text x="101" y="337" fill="#8a65ac" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="bold">N01</text>
+<text x="101" y="367" fill="#3f2a55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="bold">因果识别</text>
+<rect x="101" y="388" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="127" y="406" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">P4</text>
+<rect x="79" y="456" width="440" height="131" rx="16" fill="#f8f3fc" stroke="#e3d6ef" stroke-width="1"/>
+<rect x="79" y="456" width="5" height="131" rx="2" fill="#9876be" stroke="none" stroke-width="1"/>
+<text x="101" y="490" fill="#8a65ac" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="bold">N02</text>
+<text x="101" y="520" fill="#3f2a55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="bold">候选生成与因果选择</text>
+<text x="101" y="562" fill="#9179a8" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="normal">探索方向</text>
+<rect x="79" y="609" width="440" height="131" rx="16" fill="#f8f3fc" stroke="#e3d6ef" stroke-width="1"/>
+<rect x="79" y="609" width="5" height="131" rx="2" fill="#9876be" stroke="none" stroke-width="1"/>
+<text x="101" y="643" fill="#8a65ac" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="bold">N03</text>
+<text x="101" y="673" fill="#3f2a55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="bold">可靠决策</text>
+<rect x="101" y="694" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="127" y="712" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">P4</text>
+<rect x="163" y="694" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="189" y="712" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M4</text>
+<text x="548" y="527" fill="#8152b7" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="bold" text-anchor="middle">→</text>
+<rect x="560" y="220" width="478" height="565" rx="22" fill="#fffcff" stroke="#dbcaed" stroke-width="2"/>
+<rect x="578" y="239" width="42" height="42" rx="21" fill="#f0e7fa" stroke="#ceb4e8" stroke-width="1"/>
+<text x="599" y="267" fill="#633e90" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="bold" text-anchor="middle">02</text>
+<text x="636" y="269" fill="#412957" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="bold">通信协作</text>
+<rect x="579" y="303" width="440" height="131" rx="16" fill="#f8f3fc" stroke="#e3d6ef" stroke-width="1"/>
+<rect x="579" y="303" width="5" height="131" rx="2" fill="#9876be" stroke="none" stroke-width="1"/>
+<text x="601" y="337" fill="#8a65ac" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="bold">N04</text>
+<text x="601" y="367" fill="#3f2a55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="bold">多智能体协作</text>
+<rect x="601" y="388" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="627" y="406" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">P1</text>
+<rect x="663" y="388" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="689" y="406" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M1</text>
+<rect x="725" y="388" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="751" y="406" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M2</text>
+<rect x="787" y="388" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="813" y="406" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M3</text>
+<rect x="579" y="456" width="440" height="131" rx="16" fill="#f8f3fc" stroke="#e3d6ef" stroke-width="1"/>
+<rect x="579" y="456" width="5" height="131" rx="2" fill="#9876be" stroke="none" stroke-width="1"/>
+<text x="601" y="490" fill="#8a65ac" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="bold">N05</text>
+<text x="601" y="520" fill="#3f2a55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="bold">决策相关通信</text>
+<rect x="601" y="541" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="627" y="559" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">P3</text>
+<rect x="663" y="541" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="689" y="559" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M4</text>
+<rect x="579" y="609" width="440" height="131" rx="16" fill="#f8f3fc" stroke="#e3d6ef" stroke-width="1"/>
+<rect x="579" y="609" width="5" height="131" rx="2" fill="#9876be" stroke="none" stroke-width="1"/>
+<text x="601" y="643" fill="#8a65ac" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="bold">N06</text>
+<text x="601" y="673" fill="#3f2a55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="bold">干扰与在线适应</text>
+<rect x="601" y="694" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="627" y="712" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">P3</text>
+<rect x="663" y="694" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="689" y="712" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">P4</text>
+<rect x="725" y="694" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="751" y="712" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M1</text>
+<rect x="787" y="694" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="813" y="712" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M2</text>
+<text x="1048" y="527" fill="#8152b7" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="bold" text-anchor="middle">→</text>
+<rect x="1060" y="220" width="478" height="565" rx="22" fill="#fffcff" stroke="#dbcaed" stroke-width="2"/>
+<rect x="1078" y="239" width="42" height="42" rx="21" fill="#f0e7fa" stroke="#ceb4e8" stroke-width="1"/>
+<text x="1099" y="267" fill="#633e90" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="bold" text-anchor="middle">03</text>
+<text x="1136" y="269" fill="#412957" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="bold">异构网络</text>
+<rect x="1079" y="303" width="440" height="131" rx="16" fill="#f8f3fc" stroke="#e3d6ef" stroke-width="1"/>
+<rect x="1079" y="303" width="5" height="131" rx="2" fill="#9876be" stroke="none" stroke-width="1"/>
+<text x="1101" y="337" fill="#8a65ac" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="bold">N07</text>
+<text x="1101" y="367" fill="#3f2a55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="bold">机器人与海洋感知</text>
+<rect x="1101" y="388" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="1127" y="406" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">P1</text>
+<rect x="1163" y="388" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="1189" y="406" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">P2</text>
+<rect x="1225" y="388" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="1251" y="406" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M1</text>
+<rect x="1287" y="388" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="1313" y="406" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M2</text>
+<rect x="1349" y="388" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="1375" y="406" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M3</text>
+<rect x="1079" y="456" width="440" height="131" rx="16" fill="#f8f3fc" stroke="#e3d6ef" stroke-width="1"/>
+<rect x="1079" y="456" width="5" height="131" rx="2" fill="#9876be" stroke="none" stroke-width="1"/>
+<text x="1101" y="490" fill="#8a65ac" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="bold">N08</text>
+<text x="1101" y="520" fill="#3f2a55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="bold">低空网络</text>
+<rect x="1101" y="541" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="1127" y="559" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">P1</text>
+<rect x="1163" y="541" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="1189" y="559" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M1</text>
+<rect x="1079" y="609" width="440" height="131" rx="16" fill="#f8f3fc" stroke="#e3d6ef" stroke-width="1"/>
+<rect x="1079" y="609" width="5" height="131" rx="2" fill="#9876be" stroke="none" stroke-width="1"/>
+<text x="1101" y="643" fill="#8a65ac" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="bold">N09</text>
+<text x="1101" y="673" fill="#3f2a55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="bold">空天地海异构网络</text>
+<rect x="1101" y="694" width="53" height="25" rx="7" fill="#ede2f8" stroke="#d8c7ea" stroke-width="1"/>
+<text x="1127" y="712" fill="#573580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">M4</text>
+<text x="74" y="841" fill="#624080" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="bold">论文与在投稿件对应表</text>
+<text x="74" y="870" fill="#806b94" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="normal">P = 已发表 / 已录用 / 预印本    M = 在投 / 审稿中</text>
+<rect x="74" y="894" width="722" height="86" rx="12" fill="#fffdff" stroke="#e4d8ef" stroke-width="1"/>
+<rect x="89" y="911" width="58" height="50" rx="10" fill="#e9dff6" stroke="#cdb8e7" stroke-width="1"/>
+<text x="118" y="942" fill="#563682" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">P1</text>
+<text x="163" y="925" fill="#35244d" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="bold">无人机—无人艇协同卸载</text>
+<text x="163" y="950" fill="#695680" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="normal">AIoTC 2025 · Best Paper Award</text>
+<rect x="163" y="959" width="125" height="13" rx="6" fill="#ede5f7" stroke="none" stroke-width="1"/>
+<text x="168" y="970" fill="#47755d" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="bold">已发表</text>
+<rect x="818" y="894" width="722" height="86" rx="12" fill="#fffdff" stroke="#e4d8ef" stroke-width="1"/>
+<rect x="833" y="911" width="58" height="50" rx="10" fill="#e9dff6" stroke="#cdb8e7" stroke-width="1"/>
+<text x="862" y="942" fill="#563682" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">P2</text>
+<text x="907" y="925" fill="#35244d" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="bold">机器人表面检测路径规划</text>
+<text x="907" y="950" fill="#695680" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="normal">IEEE TIM 2025</text>
+<rect x="907" y="959" width="125" height="13" rx="6" fill="#ede5f7" stroke="none" stroke-width="1"/>
+<text x="912" y="970" fill="#47755d" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="bold">已发表</text>
+<rect x="74" y="992" width="722" height="86" rx="12" fill="#fffdff" stroke="#e4d8ef" stroke-width="1"/>
+<rect x="89" y="1009" width="58" height="50" rx="10" fill="#e9dff6" stroke="#cdb8e7" stroke-width="1"/>
+<text x="118" y="1040" fill="#563682" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">P3</text>
+<text x="163" y="1023" fill="#35244d" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="bold">依赖感知语义 HARQ</text>
+<text x="163" y="1048" fill="#695680" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="normal">arXiv:2608.08110 · Public preprint; IEEE TWC decision pen…</text>
+<rect x="163" y="1057" width="125" height="13" rx="6" fill="#ede5f7" stroke="none" stroke-width="1"/>
+<text x="168" y="1068" fill="#6f5597" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="bold">预印本</text>
+<rect x="818" y="992" width="722" height="86" rx="12" fill="#fffdff" stroke="#e4d8ef" stroke-width="1"/>
+<rect x="833" y="1009" width="58" height="50" rx="10" fill="#e9dff6" stroke="#cdb8e7" stroke-width="1"/>
+<text x="862" y="1040" fill="#563682" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">P4</text>
+<text x="907" y="1023" fill="#35244d" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="bold">因果配置与 CAUSAL-UCB</text>
+<text x="907" y="1048" fill="#695680" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="normal">NeurIPS 2026 · Accepted</text>
+<rect x="907" y="1057" width="125" height="13" rx="6" fill="#ede5f7" stroke="none" stroke-width="1"/>
+<text x="912" y="1068" fill="#3e6f95" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="bold">已录用</text>
+<rect x="74" y="1090" width="722" height="86" rx="12" fill="#fffdff" stroke="#e4d8ef" stroke-width="1"/>
+<rect x="89" y="1107" width="58" height="50" rx="10" fill="#e9dff6" stroke="#cdb8e7" stroke-width="1"/>
+<text x="118" y="1138" fill="#563682" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">M1</text>
+<text x="163" y="1121" fill="#35244d" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="bold">海事协同感知的联邦 PPO</text>
+<text x="163" y="1146" fill="#695680" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="normal">IEEE TVT · Decision pending</text>
+<rect x="163" y="1155" width="125" height="13" rx="6" fill="#ede5f7" stroke="none" stroke-width="1"/>
+<text x="168" y="1166" fill="#89619f" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="bold">在投 / 审稿中</text>
+<rect x="818" y="1090" width="722" height="86" rx="12" fill="#fffdff" stroke="#e4d8ef" stroke-width="1"/>
+<rect x="833" y="1107" width="58" height="50" rx="10" fill="#e9dff6" stroke="#cdb8e7" stroke-width="1"/>
+<text x="862" y="1138" fill="#563682" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">M2</text>
+<text x="907" y="1121" fill="#35244d" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="bold">层次联邦融合</text>
+<text x="907" y="1146" fill="#695680" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="normal">IEEE Internet of Things Journal · Decision pending</text>
+<rect x="907" y="1155" width="125" height="13" rx="6" fill="#ede5f7" stroke="none" stroke-width="1"/>
+<text x="912" y="1166" fill="#89619f" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="bold">在投 / 审稿中</text>
+<rect x="74" y="1188" width="722" height="86" rx="12" fill="#fffdff" stroke="#e4d8ef" stroke-width="1"/>
+<rect x="89" y="1205" width="58" height="50" rx="10" fill="#e9dff6" stroke="#cdb8e7" stroke-width="1"/>
+<text x="118" y="1236" fill="#563682" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">M3</text>
+<text x="163" y="1219" fill="#35244d" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="bold">海洋多节点协同感知综述</text>
+<text x="163" y="1244" fill="#695680" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="normal">IEEE Sensors Journal · Decision pending</text>
+<rect x="163" y="1253" width="125" height="13" rx="6" fill="#ede5f7" stroke="none" stroke-width="1"/>
+<text x="168" y="1264" fill="#89619f" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="bold">在投 / 审稿中</text>
+<rect x="818" y="1188" width="722" height="86" rx="12" fill="#fffdff" stroke="#e4d8ef" stroke-width="1"/>
+<rect x="833" y="1205" width="58" height="50" rx="10" fill="#e9dff6" stroke="#cdb8e7" stroke-width="1"/>
+<text x="862" y="1236" fill="#563682" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">M4</text>
+<text x="907" y="1219" fill="#35244d" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="bold">空天地海量子密钥交付</text>
+<text x="907" y="1244" fill="#695680" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="normal">IEEE TCOM · Decision pending</text>
+<rect x="907" y="1253" width="125" height="13" rx="6" fill="#ede5f7" stroke="none" stroke-width="1"/>
+<text x="912" y="1264" fill="#89619f" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="bold">在投 / 审稿中</text>
+<text x="74" y="1378" fill="#806b94" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="normal">论文状态依据新近信息修正；科研主题不等同于已发表成果。</text>
+</svg>

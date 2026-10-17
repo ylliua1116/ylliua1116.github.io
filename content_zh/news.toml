@@ -1,0 +1,29 @@
+
+[[news]]
+date = "2026年10月"
+content = "开发并上线 YAO LAB · 爻间，一个将《周易》六十四卦与六维二进制几何、概率实验、经典文本及 AI 辅助思考相结合的交互式数字实验室。"
+
+[[news.links]]
+label = "访问网站"
+url = "https://ylliua1116.github.io/yao-lab/"
+
+[[news.links]]
+label = "GitHub 源码"
+url = "https://github.com/ylliua1116/yao-lab"
+
+[[news]]
+date = "2026年9月"
+content = "我的关于网络化系统在线因果配置的研究获 NeurIPS 2026 录用。"
+
+[[news]]
+date = "2026年8月"
+content = "关于开放词汇场景图依赖感知 HARQ的预印本在 arXiv 公开。"
+
+[[news]]
+date = "2025年8月"
+content = "我的无人机—无人艇协同任务卸载论文获得 AIoTC 2025 最佳论文奖。"
+
+[[news]]
+date = "2025年3月"
+content = "我参与的机器人检测研究发表于 IEEE Transactions on Instrumentation and Measurement。"
+

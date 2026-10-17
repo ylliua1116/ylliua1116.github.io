@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="ttl desc"><title id="ttl">Causal steady state network configuration</title><desc id="desc">Interfering network nodes connect to an evaluation module and an evolving online decision diagram. Conceptual animation, not original experimental data.</desc>
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fcfbff"/><stop offset=".58" stop-color="#f5f1ff"/><stop offset="1" stop-color="#e8f1ff"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#c7b4fb" stop-opacity=".52"/><stop offset="1" stop-color="#c7b4fb" stop-opacity="0"/></radialGradient>
+ <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9886e7"/><stop offset=".55" stop-color="#6e5ac1"/><stop offset="1" stop-color="#453c91"/></linearGradient>
+ <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b1f4e9"/><stop offset="1" stop-color="#46b8b4"/></linearGradient>
+ <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d1eafb"/><stop offset="1" stop-color="#acd8ed"/></linearGradient>
+ <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9dc"/><stop offset="1" stop-color="#ed86b5"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#f1ebff" stop-opacity=".74"/></linearGradient>
+ <pattern id="grid" width="27" height="27" patternUnits="userSpaceOnUse"><path d="M27 0H0V27" fill="none" stroke="#9483ca" stroke-opacity=".085" stroke-width=".8"/><circle cx="1" cy="1" r=".7" fill="#8e79cb" opacity=".20"/></pattern>
+ <filter id="shadow" x="-40%" y="-50%" width="180%" height="220%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6650aa" flood-opacity=".17"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+ <filter id="beam"><feGaussianBlur stdDeviation="3.2"/></filter>
+ <marker id="arrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 7 3.5 0 7Z" fill="#826acc"/></marker>
+ <marker id="retryArrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 7 3.5 0 7Z" fill="#e58da9"/></marker>
+</defs>
+<style><![CDATA[
+@keyframes slide {to{stroke-dashoffset:-44}}
+@keyframes drift {0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes swish {0%,100%{transform:translateX(-8px)}50%{transform:translateX(8px)}}
+@keyframes glow {0%,100%{opacity:.38}50%{opacity:.95}}
+@keyframes ring {0%{opacity:.65;transform:scale(.7)}100%{opacity:0;transform:scale(1.55)}}
+@keyframes turn {to{transform:rotate(360deg)}}
+@keyframes scanning {0%,10%{transform:translateX(0);opacity:.12}22%{opacity:1}75%{transform:translateX(95px);opacity:.95}85%,100%{transform:translateX(95px);opacity:0}}
+@keyframes trace {0%,8%{stroke-dashoffset:540}65%,86%{stroke-dashoffset:0}100%{stroke-dashoffset:540}}
+@keyframes traceSmall {0%,12%{stroke-dashoffset:180}75%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:180}}
+@keyframes breathe {0%,100%{transform:scale(.96);opacity:.62}50%{transform:scale(1.13);opacity:1}}
+@keyframes twinkle {0%,100%{opacity:.35}50%{opacity:1}}
+.dash{animation:slide 3.5s linear infinite}.slowdash{animation:slide 7s linear infinite}
+.drift{animation:drift 3.4s ease-in-out infinite}.drift2{animation:drift 5s ease-in-out -.7s infinite}
+.sea{animation:swish 5.5s ease-in-out infinite}.sea2{animation:swish 7s ease-in-out -2s infinite}
+.glow{animation:glow 2.4s ease-in-out infinite}.spin{animation:turn .6s linear infinite;transform-box:fill-box;transform-origin:center}
+.ring{animation:ring 2.8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.ring2{animation:ring 2.8s ease-out 1.4s infinite;transform-box:fill-box;transform-origin:center}
+.beam{animation:scanning 5s ease-in-out infinite}
+.trace{stroke-dasharray:540;stroke-dashoffset:540;animation:trace 7s ease-in-out infinite}
+.tracesmall{stroke-dasharray:180;stroke-dashoffset:180;animation:traceSmall 6s ease-in-out infinite}
+.breathe{animation:breathe 2.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.twinkle{animation:twinkle 3.5s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){
+ .dash,.slowdash,.drift,.drift2,.sea,.sea2,.glow,.spin,.ring,.ring2,.beam,.trace,.tracesmall,.breathe,.twinkle{animation:none!important}
+ .trace,.tracesmall{stroke-dashoffset:0!important}animateMotion,animate{display:none!important}
+}
+]]></style>
+<rect x="0" y="0" width="400" height="300" rx="20" fill="url(#paper)"/>
+<rect width="400" height="300" rx="20" fill="url(#grid)"/>
+<ellipse cx="315" cy="48" rx="136" ry="100" fill="url(#halo)" opacity=".56"/>
+<rect x="9" y="9" width="382" height="282" rx="15" fill="none" stroke="#baa9ef" stroke-opacity=".35"/>
+
+<!-- interference graph: visible arcs, no labels -->
+<path d="M56 75L111 58 157 99 133 178 65 201 40 139Z" stroke="#9b8acb" stroke-width="2.5" stroke-dasharray="5 6" fill="none" class="dash"/>
+<path d="M56 75L133 178M111 58L65 201M157 99L40 139M111 58L133 178M65 201L157 99" stroke="#a79adb" stroke-opacity=".55" stroke-width="1.8" stroke-dasharray="4 6" fill="none"/>
+<!-- confidence / intervention halos -->
+<ellipse cx="111" cy="58" rx="29" ry="29" fill="#9881dc" opacity=".08" class="breathe"/>
+<ellipse cx="65" cy="201" rx="32" ry="32" fill="#53b9ad" opacity=".12" class="breathe"/>
+<g filter="url(#shadow)">
+ <circle cx="56" cy="75" r="16" fill="url(#glass)" stroke="#806ac4" stroke-width="3"/>
+ <circle cx="111" cy="58" r="18" fill="#dad0fb" stroke="#866bd0" stroke-width="3"/>
+ <circle cx="157" cy="99" r="17" fill="url(#glass)" stroke="#866bd0" stroke-width="3"/>
+ <circle cx="133" cy="178" r="18" fill="url(#glass)" stroke="#866bd0" stroke-width="3"/>
+ <circle cx="65" cy="201" r="19" fill="#c8f0e9" stroke="#4db3aa" stroke-width="3.5"/>
+ <circle cx="40" cy="139" r="14" fill="url(#glass)" stroke="#8876c5" stroke-width="3"/>
+</g>
+<circle r="5" fill="#43b7b1" stroke="#fff" stroke-width="1.8"><animateMotion path="M65 201L157 99L111 58L133 178" dur="5s" repeatCount="indefinite"/></circle>
+<circle r="4.6" fill="#937cdc" stroke="#fff" stroke-width="1.8"><animateMotion path="M56 75L133 178L40 139" dur="4.7s" begin="-2s" repeatCount="indefinite"/></circle>
+<!-- central bridge: causal evaluation to online control -->
+<path d="M169 139h41" stroke="#a698df" stroke-width="9" stroke-opacity=".27"/>
+<path d="M169 139h41" stroke="#755fc8" stroke-width="2.8" stroke-dasharray="4 6" marker-end="url(#arrow)" class="dash"/>
+<g filter="url(#shadow)">
+ <rect x="190" y="115" width="35" height="48" rx="9" fill="url(#glass)" stroke="#9a87d6" stroke-width="2"/>
+ <path d="M199 132h16m-16 8h16m-16 8h10" stroke="#8a73ce" stroke-width="3" stroke-linecap="round"/>
+ <circle cx="213" cy="151" r="3.2" fill="#49b7ad" class="glow"/>
+</g>
+<!-- causal value confidence bands to stable online decisions (not data) -->
+<g filter="url(#shadow)">
+ <rect x="237" y="48" width="149" height="195" rx="17" fill="url(#glass)" stroke="#b6a8e2" stroke-width="2"/>
+ <path d="M257 205h110M257 205V82" stroke="#c4b8e4" stroke-width="2" stroke-linecap="round" fill="none"/>
+ <g stroke="#b9abd9" stroke-opacity=".25" stroke-width="1"><path d="M257 174h110M257 144h110M257 114h110M285 82v123M315 82v123M345 82v123"/></g>
+ <path d="M258 174L279 162 295 171 312 133 330 147 345 116 365 97L365 123 345 146 330 174 312 163 295 197 279 183 258 196Z" fill="#cabaf6" opacity=".37"/>
+ <path d="M258 186L278 170 297 178 313 148 330 153 346 132 367 106" stroke="#c5b7ec" stroke-width="2.5" fill="none" stroke-dasharray="3 5"/>
+ <path class="tracesmall" d="M258 184L278 168 298 176 313 141 330 150 345 124 366 105" stroke="#7355bd" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <circle cx="366" cy="105" r="6" fill="#42b9ae" class="breathe"/>
+ <rect x="267" y="218" width="50" height="4" rx="2" fill="#cbbdef"/>
+ <rect x="321" y="218" width="30" height="4" rx="2" fill="#75c6c1"/>
+</g>
+</svg>

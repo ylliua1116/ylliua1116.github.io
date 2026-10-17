@@ -1,0 +1,15 @@
+type = "card"
+title = "荣誉与奖励"
+description = "学术荣誉"
+
+[[items]]
+title = "最佳论文奖"
+subtitle = "AIoTC 2025 学术会议"
+date = "2025"
+content = "获奖成果为《Low-Altitude Task Offloading for UAV–USV Collaboration in Marine Edge-Enabled Networks》。 [论文](https://doi.org/10.1109/AIoTC66747.2025.11198686)"
+
+[[items]]
+title = "国家励志奖学金"
+subtitle = "本科阶段"
+date = "2021–2023"
+content = "本科阶段获得的学业荣誉。"

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="ttl desc"><title id="ttl">Robotic line scan coverage</title><desc id="desc">A jointed robotic inspection arm scans the surface of an electronic component along a planned coverage path. Conceptual animation, not original experimental data.</desc>
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fcfbff"/><stop offset=".58" stop-color="#f5f1ff"/><stop offset="1" stop-color="#e8f1ff"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#c7b4fb" stop-opacity=".52"/><stop offset="1" stop-color="#c7b4fb" stop-opacity="0"/></radialGradient>
+ <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9886e7"/><stop offset=".55" stop-color="#6e5ac1"/><stop offset="1" stop-color="#453c91"/></linearGradient>
+ <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b1f4e9"/><stop offset="1" stop-color="#46b8b4"/></linearGradient>
+ <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d1eafb"/><stop offset="1" stop-color="#acd8ed"/></linearGradient>
+ <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9dc"/><stop offset="1" stop-color="#ed86b5"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#f1ebff" stop-opacity=".74"/></linearGradient>
+ <pattern id="grid" width="27" height="27" patternUnits="userSpaceOnUse"><path d="M27 0H0V27" fill="none" stroke="#9483ca" stroke-opacity=".085" stroke-width=".8"/><circle cx="1" cy="1" r=".7" fill="#8e79cb" opacity=".20"/></pattern>
+ <filter id="shadow" x="-40%" y="-50%" width="180%" height="220%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6650aa" flood-opacity=".17"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+ <filter id="beam"><feGaussianBlur stdDeviation="3.2"/></filter>
+ <marker id="arrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 7 3.5 0 7Z" fill="#826acc"/></marker>
+ <marker id="retryArrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 7 3.5 0 7Z" fill="#e58da9"/></marker>
+</defs>
+<style><![CDATA[
+@keyframes slide {to{stroke-dashoffset:-44}}
+@keyframes drift {0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes swish {0%,100%{transform:translateX(-8px)}50%{transform:translateX(8px)}}
+@keyframes glow {0%,100%{opacity:.38}50%{opacity:.95}}
+@keyframes ring {0%{opacity:.65;transform:scale(.7)}100%{opacity:0;transform:scale(1.55)}}
+@keyframes turn {to{transform:rotate(360deg)}}
+@keyframes scanning {0%,10%{transform:translateX(0);opacity:.12}22%{opacity:1}75%{transform:translateX(95px);opacity:.95}85%,100%{transform:translateX(95px);opacity:0}}
+@keyframes trace {0%,8%{stroke-dashoffset:540}65%,86%{stroke-dashoffset:0}100%{stroke-dashoffset:540}}
+@keyframes traceSmall {0%,12%{stroke-dashoffset:180}75%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:180}}
+@keyframes breathe {0%,100%{transform:scale(.96);opacity:.62}50%{transform:scale(1.13);opacity:1}}
+@keyframes twinkle {0%,100%{opacity:.35}50%{opacity:1}}
+.dash{animation:slide 3.5s linear infinite}.slowdash{animation:slide 7s linear infinite}
+.drift{animation:drift 3.4s ease-in-out infinite}.drift2{animation:drift 5s ease-in-out -.7s infinite}
+.sea{animation:swish 5.5s ease-in-out infinite}.sea2{animation:swish 7s ease-in-out -2s infinite}
+.glow{animation:glow 2.4s ease-in-out infinite}.spin{animation:turn .6s linear infinite;transform-box:fill-box;transform-origin:center}
+.ring{animation:ring 2.8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.ring2{animation:ring 2.8s ease-out 1.4s infinite;transform-box:fill-box;transform-origin:center}
+.beam{animation:scanning 5s ease-in-out infinite}
+.trace{stroke-dasharray:540;stroke-dashoffset:540;animation:trace 7s ease-in-out infinite}
+.tracesmall{stroke-dasharray:180;stroke-dashoffset:180;animation:traceSmall 6s ease-in-out infinite}
+.breathe{animation:breathe 2.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.twinkle{animation:twinkle 3.5s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){
+ .dash,.slowdash,.drift,.drift2,.sea,.sea2,.glow,.spin,.ring,.ring2,.beam,.trace,.tracesmall,.breathe,.twinkle{animation:none!important}
+ .trace,.tracesmall{stroke-dashoffset:0!important}animateMotion,animate{display:none!important}
+}
+]]></style>
+<rect x="0" y="0" width="400" height="300" rx="20" fill="url(#paper)"/>
+<rect width="400" height="300" rx="20" fill="url(#grid)"/>
+<ellipse cx="315" cy="48" rx="136" ry="100" fill="url(#halo)" opacity=".56"/>
+<rect x="9" y="9" width="382" height="282" rx="15" fill="none" stroke="#baa9ef" stroke-opacity=".35"/>
+
+<!-- Workspace perspective grid & mounting plate -->
+<ellipse cx="260" cy="222" rx="128" ry="33" fill="#ac9bdd" opacity=".13" filter="url(#soft)"/>
+<path d="M177 153L336 127 377 150 219 176Z" fill="#f2efff" stroke="#b3a9de" stroke-width="2.5"/>
+<path d="M219 176L377 150 377 239 219 267Z" fill="#c9d0e9" stroke="#a4aed6" stroke-width="2"/>
+<path d="M177 153L219 176 219 267 177 238Z" fill="#aeb8dc" stroke="#99a7d3" stroke-width="2"/>
+<path d="M194 165L331 142 357 155 223 179Z" fill="#eef1ff" stroke="#b6afd9" stroke-width="1.2"/>
+<g stroke="#9986d3" stroke-opacity=".46" stroke-width="1.2" fill="none">
+ <path d="M199 184l155-26M199 204l155-26M199 225l155-26M199 246l155-26"/>
+ <path d="M234 175l0 65M262 170v66M290 166v65M318 162v64"/>
+</g>
+<!-- Coverage trace with path on plate -->
+<path d="M230 190l122-20-1 16-119 20 2 15 117-20-1 16-114 19" fill="none" stroke="#8f72dd" stroke-width="10" stroke-linecap="round" opacity=".12"/>
+<path class="trace" d="M230 190l122-20-1 16-119 20 2 15 117-20-1 16-114 19" fill="none" stroke="#8166d6" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230 190l122-20-1 16-119 20 2 15 117-20-1 16-114 19" fill="none" stroke="#df96be" stroke-opacity=".3" stroke-width="1.2" stroke-dasharray="3 5"/>
+<!-- defects and detection rings -->
+<g><ellipse cx="279" cy="202" rx="7" ry="4" fill="#ef90aa" opacity=".75" transform="rotate(-9 279 202)"/>
+ <circle cx="279" cy="202" r="10" fill="none" stroke="#ee8fb6" stroke-width="1.6" class="ring"/>
+ <ellipse cx="322" cy="215" rx="5.5" ry="3.5" fill="#efa0b9" opacity=".9" transform="rotate(-9 322 215)"/>
+ <circle cx="322" cy="215" r="10" fill="none" stroke="#ee8fb6" stroke-width="1.4" class="ring2"/>
+</g>
+<!-- articulated industrial robot -->
+<ellipse cx="70" cy="254" rx="65" ry="12" fill="#5c4b94" opacity=".12"/>
+<rect x="18" y="226" width="96" height="27" rx="10" fill="url(#purple)" filter="url(#shadow)"/>
+<rect x="38" y="208" width="55" height="26" rx="7" fill="#6552ad" stroke="#8c78cd" stroke-width="2"/>
+<path d="M65 213L103 142 163 109 206 143" stroke="#d6cdf4" stroke-width="27" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+<path d="M65 213L103 142 163 109 206 143" stroke="#7660bd" stroke-width="19" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+<path d="M67 207l36-65 59-32 43 34" stroke="#a595e0" stroke-width="3" fill="none" stroke-linecap="round"/>
+<g fill="#f4f0ff" stroke="#614fab" stroke-width="7" filter="url(#shadow)"><circle cx="103" cy="142" r="15"/><circle cx="163" cy="109" r="15"/></g>
+<g fill="#ae9fe8"><circle cx="103" cy="142" r="7"/><circle cx="163" cy="109" r="7"/></g>
+<g transform="translate(201 133)">
+ <rect x="-10" y="-2" width="28" height="27" rx="6" fill="#46378b"/>
+ <rect x="-4" y="16" width="22" height="11" rx="3" fill="#b5a0ed"/>
+ <circle cx="7" cy="30" r="4" fill="#75e0ce" class="glow"/>
+</g>
+<!-- active laser scan and live light reflection -->
+<path d="M208 161L258 198" fill="none" stroke="#ff8fb7" stroke-width="12" opacity=".18" filter="url(#beam)"/>
+<path d="M208 161L258 198" stroke="#ec7ba9" stroke-width="2.8" opacity=".8"/>
+<g class="beam"><path d="M256 196L273 199" stroke="#ee81b2" stroke-width="8" stroke-linecap="round" opacity=".35"/>
+ <path d="M256 196L273 199" stroke="#f36baa" stroke-width="2.8" stroke-linecap="round"/>
+ <circle cx="264" cy="198" r="5" fill="#ed77ac" opacity=".78"/></g>
+<!-- Scanned coverage sweep emitter follows robot/plate edge -->
+<circle r="6" fill="#ff85ba" stroke="#fff" stroke-width="2"><animateMotion path="M230 190l122-20-1 16-119 20 2 15 117-20-1 16-114 19" dur="7s" repeatCount="indefinite"/></circle>
+<circle cx="264" cy="198" r="13" fill="#ed7db5" opacity=".08" class="glow"/>
+</svg>

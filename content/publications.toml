@@ -1,0 +1,4 @@
+type = "publication"
+title = "Publications & Research Outputs"
+description = "Selected journal papers, conference papers, preprints, and ongoing research."
+source = "publications.bib"

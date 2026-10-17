@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="720" height="480" viewBox="0 0 720 480" role="img" aria-label="Animated graphical research illustration without visible labels">
+<!-- yuli-ultra-manuscript-2026: m4; only replace M3 M4 -->
+<defs>
+      <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fcfaff"/><stop offset=".53" stop-color="#efedff"/><stop offset="1" stop-color="#e4f6fa"/></linearGradient>
+      <radialGradient id="ambient"><stop stop-color="#afa0f4" stop-opacity=".45"/><stop offset="1" stop-color="#afa0f4" stop-opacity="0"/></radialGradient>
+      <radialGradient id="marine"><stop stop-color="#70d1df" stop-opacity=".40"/><stop offset="1" stop-color="#7fd8ea" stop-opacity="0"/></radialGradient>
+      <linearGradient id="indigo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b5a9fc"/><stop offset=".38" stop-color="#7056bc"/><stop offset="1" stop-color="#4b4b9c"/></linearGradient>
+      <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9eafc"/><stop offset=".35" stop-color="#93b5d5"/><stop offset="1" stop-color="#45799f"/></linearGradient>
+      <linearGradient id="aqua" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d7fffa"/><stop offset=".43" stop-color="#43b4b9"/><stop offset="1" stop-color="#2c899e"/></linearGradient>
+      <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff" stop-opacity=".98"/><stop offset=".58" stop-color="#f4f1ff" stop-opacity=".88"/><stop offset="1" stop-color="#ded5fd" stop-opacity=".70"/></linearGradient>
+      <linearGradient id="ocean" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#b3edf4"/><stop offset=".52" stop-color="#7ad0e3"/><stop offset="1" stop-color="#bddff3"/></linearGradient>
+      <linearGradient id="oceanDeep" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b8edf5" stop-opacity=".65"/><stop offset="1" stop-color="#a2bedb" stop-opacity=".60"/></linearGradient>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff7cb"/><stop offset=".46" stop-color="#efbf69"/><stop offset="1" stop-color="#d8947c"/></linearGradient>
+      <linearGradient id="lens" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0ffff"/><stop offset=".42" stop-color="#77ceda"/><stop offset="1" stop-color="#5464aa"/></linearGradient>
+      <linearGradient id="link" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8870e7" stop-opacity=".5"/><stop offset=".52" stop-color="#a28de8" stop-opacity=".9"/><stop offset="1" stop-color="#53b6c3" stop-opacity=".6"/></linearGradient>
+      <linearGradient id="hull" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#669bb9"/><stop offset=".53" stop-color="#407695"/><stop offset="1" stop-color="#244f77"/></linearGradient>
+      <pattern id="micro" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".92" fill="#a89cd5" opacity=".22"/></pattern>
+      <pattern id="mesh" width="29" height="29" patternUnits="userSpaceOnUse"><path d="M29 0H0V29" fill="none" stroke="#b8afe2" stroke-opacity=".16" stroke-width=".8"/></pattern>
+      <filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#45387e" flood-opacity=".19"/></filter>
+      <filter id="microShadow" x="-90%" y="-90%" width="280%" height="280%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#47378a" flood-opacity=".17"/></filter>
+      <filter id="blur"><feGaussianBlur stdDeviation="12"/></filter>
+      <filter id="glow"><feGaussianBlur stdDeviation="4"/></filter>
+      <clipPath id="frame"><rect width="720" height="480" rx="30"/></clipPath>
+      <clipPath id="waterClip"><path d="M0 349Q84 330 170 351T352 350T533 348T720 349V480H0Z"/></clipPath>
+      <style><![CDATA[
+        @keyframes bob {0%,100%{transform:translateY(0px)}50%{transform:translateY(-5px)}}
+        @keyframes prop {to{transform:rotate(360deg)}}
+        @keyframes orbit {to{transform:rotate(360deg)}}
+        @keyframes rev {to{transform:rotate(-360deg)}}
+        @keyframes breathing {0%,100%{opacity:.48}50%{opacity:1}}
+        @keyframes dash {to{stroke-dashoffset:-72}}
+        @keyframes dashRev {to{stroke-dashoffset:72}}
+        @keyframes drift {0%,100%{transform:translateX(0)}50%{transform:translateX(-13px)}}
+        @keyframes lift {0%,100%{transform:translate(0,0)}50%{transform:translate(0,-4px)}}
+        @keyframes glowPulse {0%,100%{opacity:.12;transform:scale(.86)}50%{opacity:.38;transform:scale(1.1)}}
+        @keyframes waveShift {0%,100%{transform:translateX(0)}50%{transform:translateX(-21px)}}
+        @keyframes spinSmall {to{transform:rotate(360deg)}}
+        .bob{animation:bob 5.3s ease-in-out infinite}.bobAlt{animation:bob 4.2s ease-in-out -1.9s infinite}
+        .prop{animation:prop 1.55s linear infinite;transform-box:fill-box;transform-origin:center}
+        .orbit{animation:orbit 18s linear infinite;transform-box:fill-box;transform-origin:center}
+        .orbitAlt{animation:rev 14s linear infinite;transform-box:fill-box;transform-origin:center}
+        .glimmer{animation:breathing 3.2s ease-in-out infinite}
+        .dash{animation:dash 6s linear infinite}.dashRev{animation:dashRev 7s linear infinite}
+        .lift{animation:lift 4.1s ease-in-out infinite}.wave{animation:waveShift 12s ease-in-out infinite}
+        .pulse{animation:glowPulse 3.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+        .spark{animation:breathing 2.7s ease-in-out infinite}
+        @media (prefers-reduced-motion: reduce){.bob,.bobAlt,.prop,.orbit,.orbitAlt,.glimmer,.dash,.dashRev,.lift,.wave,.pulse,.spark{animation:none!important}.traveler{display:none}}
+      ]]></style>
+    </defs>
+<g clip-path="url(#frame)">
+<rect width="720" height="480" fill="url(#paper)"/>
+<ellipse cx="240" cy="103" rx="310" ry="230" fill="url(#ambient)"/>
+<ellipse cx="553" cy="395" rx="280" ry="205" fill="url(#marine)"/>
+<rect width="720" height="480" fill="url(#micro)"/>
+<rect width="720" height="480" fill="url(#mesh)" opacity=".52"/>
+<g fill="none" stroke="#bcb0ea" stroke-width="1.15" opacity=".39"><path d="M-80 148Q177 -38 458 89T824 98"/><path d="M-80 165Q177 -21 458 106T824 115"/><path d="M-80 181Q177 -5 458 123T824 131"/></g>
+
+<!-- Multi-plane orbital arcs and terrestrial/coastal strata -->
+<ellipse cx="338" cy="91" rx="284" ry="98" transform="rotate(8 338 91)" fill="none" stroke="#a695e4" stroke-width="1.8" opacity=".32"/>
+<ellipse cx="334" cy="111" rx="317" ry="110" transform="rotate(8 334 111)" fill="none" stroke="#9887d6" stroke-width="1.2" opacity=".25"/>
+<path d="M0 350Q83 335 165 350T349 344T530 349T720 346V480H0Z" fill="url(#ocean)" opacity=".48"/>
+<g clip-path="url(#waterClip)">
+ <path d="M-33 378Q79 352 183 379T403 376T628 374T752 378" fill="none" stroke="#68bed2" stroke-width="2.6" opacity=".63" class="wave"/>
+ <path d="M-36 409Q75 384 192 409T409 409T623 407T764 411" fill="none" stroke="#72bfd7" stroke-width="1.8" opacity=".54"/>
+ <path d="M0 443Q108 423 216 445T498 444T720 449V480H0Z" fill="#9bc6df" opacity=".28"/>
+</g>
+<!-- Quantum photonic multi-hop network: two braided channels, four domains -->
+
+<path d="M178 113Q232 151 282 198" fill="none" stroke="#9d85e3" stroke-width="15" opacity=".13" filter="url(#glow)"/>
+<path d="M178 113Q232 151 282 198" fill="none" stroke="#9d85e3" stroke-width="3.1" stroke-dasharray="5 10" stroke-linecap="round" class="dash" opacity=".86"/>
+<path d="M527 146Q466 163 421 211" fill="none" stroke="#7b74d1" stroke-width="15" opacity=".13" filter="url(#glow)"/>
+<path d="M527 146Q466 163 421 211" fill="none" stroke="#7b74d1" stroke-width="3.1" stroke-dasharray="5 10" stroke-linecap="round" class="dash" opacity=".86"/>
+<path d="M157 316Q217 316 284 260" fill="none" stroke="#57c4c9" stroke-width="15" opacity=".13" filter="url(#glow)"/>
+<path d="M157 316Q217 316 284 260" fill="none" stroke="#57c4c9" stroke-width="3.1" stroke-dasharray="5 10" stroke-linecap="round" class="dash" opacity=".86"/>
+<path d="M430 263Q496 311 555 333" fill="none" stroke="#66aacb" stroke-width="15" opacity=".13" filter="url(#glow)"/>
+<path d="M430 263Q496 311 555 333" fill="none" stroke="#66aacb" stroke-width="3.1" stroke-dasharray="5 10" stroke-linecap="round" class="dash" opacity=".86"/>
+<path d="M359 164Q357 137 359 115" fill="none" stroke="#dbac6d" stroke-width="15" opacity=".13" filter="url(#glow)"/>
+<path d="M359 164Q357 137 359 115" fill="none" stroke="#dbac6d" stroke-width="3.1" stroke-dasharray="5 10" stroke-linecap="round" class="dash" opacity=".86"/>
+<path d="M406 245Q456 265 483 291" fill="none" stroke="#9d79d2" stroke-width="15" opacity=".13" filter="url(#glow)"/>
+<path d="M406 245Q456 265 483 291" fill="none" stroke="#9d79d2" stroke-width="3.1" stroke-dasharray="5 10" stroke-linecap="round" class="dash" opacity=".86"/>
+
+<!-- Quantum twin-state oscillations as sinusoidal wave packets -->
+<g fill="none" stroke-width="1.5" stroke-linecap="round" opacity=".78">
+ <path d="M181 123C207 137 214 143 223 149S244 162 260 183" stroke="#e0af75" stroke-dasharray="3 9" class="dashRev"/>
+ <path d="M514 154Q485 178 456 196" stroke="#f4cf8f" stroke-dasharray="3 9" class="dash"/>
+ <path d="M432 276Q477 316 544 343" stroke="#e7b98c" stroke-dasharray="3 9" class="dashRev"/>
+</g>
+<!-- Subtle layered placement anchors -->
+<g stroke="#d4c8f8" stroke-width="1.5" fill="none" opacity=".65"><path d="M87 195Q130 217 174 194"/><path d="M495 255Q554 278 622 253"/></g>
+<!-- Detailed photonic satellite on upper left (solar, emitter, alignment) -->
+<g class="bobAlt" filter="url(#soft)" transform="rotate(16 168 100)">
+ <path d="M137 101H196" stroke="#655cad" stroke-width="5"/>
+ <rect x="69" y="78" width="65" height="44" rx="5" fill="#9e8fdc" stroke="#796cc8" stroke-width="2.1"/>
+ <rect x="199" y="78" width="65" height="44" rx="5" fill="#a399e2" stroke="#796cc8" stroke-width="2.1"/>
+ <g fill="none" stroke="#f7f4ff" stroke-opacity=".78" stroke-width="1.6"><path d="M90 80V120M112 80V120M220 80V120M242 80V120M69 100H133M199 100H263"/></g>
+ <rect x="139" y="81" width="56" height="41" rx="10" fill="url(#indigo)" stroke="#6657b2" stroke-width="2"/>
+ <path d="M167 122L154 137L167 146L181 137Z" fill="#e3ddff" stroke="#aa94e6" stroke-width="1.8"/>
+ <path d="M155 81L167 62L179 81" fill="none" stroke="#7260b5" stroke-width="2.5"/>
+ <circle cx="167" cy="101" r="8" fill="url(#lens)" stroke="#eafcff" stroke-width="2"/>
+</g>
+<g fill="none" stroke="#9182da" stroke-width="1.7" opacity=".55"><path d="M132 162Q177 135 224 162"/><path d="M122 170Q175 134 232 172"/></g>
+<!-- Air relay drone right, physically distinct optics + payload -->
+<g class="bob" filter="url(#soft)">
+ <path d="M505 122L483 105M547 122L568 105M505 136L481 153M547 136L570 153" fill="none" stroke="#6c66b4" stroke-width="7" stroke-linecap="round"/>
+ <g fill="#e7e1fd" stroke="#8e7cce" stroke-width="2"><circle cx="477" cy="102" r="9"/><circle cx="572" cy="102" r="9"/><circle cx="477" cy="157" r="8"/><circle cx="572" cy="157" r="8"/></g>
+ <g fill="none" stroke="#8d78d2" stroke-width="3.2" stroke-dasharray="14 8 5 9"><circle class="prop" cx="477" cy="102" r="18"/><circle class="prop" cx="572" cy="102" r="18"/><circle class="prop" cx="477" cy="157" r="16"/><circle class="prop" cx="572" cy="157" r="16"/></g>
+ <rect x="500" y="115" width="53" height="32" rx="12" fill="url(#indigo)" stroke="#6e55b3" stroke-width="2"/>
+ <path d="M510 121H542" stroke="#e2dcff" stroke-width="2"/>
+ <rect x="518" y="145" width="17" height="13" rx="4" fill="#f7f3ff" stroke="#a58cd7" stroke-width="1.3"/>
+ <circle cx="526" cy="152" r="4" fill="#e4c88d"/>
+</g>
+<path class="glimmer" d="M527 156L474 247Q524 263 579 247Z" fill="#d5c4f8" opacity=".13"/>
+<!-- Coastal fiber base station: architectural, not icon -->
+<g filter="url(#soft)">
+ <path d="M70 335L209 335L221 366H58Z" fill="#94baca" opacity=".36"/>
+ <rect x="76" y="273" width="129" height="72" rx="15" fill="url(#glass)" stroke="#afa5e6" stroke-width="2.3"/>
+ <rect x="85" y="290" width="110" height="45" rx="8" fill="#e7e6ff" stroke="#c0b1eb" stroke-width="1.1"/>
+ <rect x="91" y="297" width="31" height="28" rx="5" fill="#c8bbee"/>
+ <path d="M99 301H114M99 308H114M99 315H109" stroke="#8470ca" stroke-width="1.9" stroke-linecap="round"/>
+ <path d="M130 299H183M130 307H183M130 314H165" stroke="#9995d5" stroke-width="2.3" stroke-linecap="round"/>
+ <circle cx="179" cy="320" r="3.2" fill="#4dc6c3"/>
+ <path d="M142 273V245M142 250L129 264M142 250L154 264" stroke="#806ecb" stroke-width="4" fill="none" stroke-linecap="round"/>
+ <circle cx="142" cy="243" r="5" fill="#ebc37c" stroke="#fff" stroke-width="1.5"/>
+</g>
+<path d="M98 254Q142 215 186 254M89 245Q143 198 193 246" fill="none" stroke="#8984d8" stroke-width="1.5" opacity=".7"/>
+<!-- Air-ground fiber/waveguide bundle to central processing -->
+<path d="M205 321Q240 309 280 284" fill="none" stroke="#9a8bd9" stroke-width="2.3" opacity=".7"/>
+<path d="M210 332Q246 329 282 303" fill="none" stroke="#70b4cd" stroke-width="1.7" opacity=".62"/>
+<!-- Maritime key relay USV, engineered deck, transponder, secure store -->
+<g class="bobAlt" filter="url(#soft)">
+ <path d="M495 340H670L637 378H525Z" fill="url(#hull)" stroke="#315d83" stroke-width="2.7"/>
+ <path d="M504 346H661" stroke="#bbdcea" stroke-width="3.5"/>
+ <path d="M535 329H618V341H530Z" fill="#acc8dd" stroke="#78a5c5" stroke-width="1.6"/>
+ <rect x="556" y="303" width="58" height="26" rx="7" fill="url(#steel)" stroke="#6686ad" stroke-width="2"/>
+ <rect x="567" y="308" width="28" height="12" rx="3" fill="#c5ecf6"/>
+ <path d="M585 303V266M584 275H603" stroke="#6882a9" stroke-width="4" stroke-linecap="round"/>
+ <path d="M604 275Q621 258 632 271" stroke="#746fc3" stroke-width="2" fill="none"/>
+ <circle cx="585" cy="263" r="6" fill="#e7ca90" stroke="#fff" stroke-width="1.7"/>
+ <path d="M538 379Q556 390 578 379M595 379Q621 390 645 379" stroke="#edffff" stroke-width="3.3" fill="none" stroke-linecap="round"/>
+</g>
+<!-- sea to coast slow physical layer -->
+<g opacity=".62"><path d="M230 381Q347 416 487 386" stroke="#72b9ce" stroke-width="2" fill="none" stroke-dasharray="9 11"/><path d="M223 397Q344 437 499 402" stroke="#7abccb" stroke-width="1.6" fill="none" stroke-dasharray="4 12"/></g>
+
+
+<!-- Quantum entanglement and trust hub: photonic router with double-ring quantum optics -->
+<circle cx="355" cy="232" r="120" fill="url(#ambient)" opacity=".82"/>
+<g fill="none" opacity=".7"><circle cx="355" cy="232" r="105" stroke="#baa6e9" stroke-width="1.5"/><circle cx="355" cy="232" r="115" stroke="#9a8bdc" stroke-width="1.6" stroke-dasharray="3 16"/></g>
+<g class="orbit" fill="none" stroke="#987bdd" stroke-width="2.4" stroke-dasharray="37 11 4 17"><circle cx="355" cy="232" r="101"/></g>
+<g class="orbitAlt" fill="none" stroke="#6bc8c8" stroke-width="2.4" stroke-dasharray="14 14 31 28"><circle cx="355" cy="232" r="86"/></g>
+<circle cx="355" cy="232" r="74" fill="#fff" fill-opacity=".78" stroke="#dad0f7" stroke-width="2" filter="url(#microShadow)"/>
+<!-- Paired-photon optical entanglement resonator: deliberately distinct from M3's data-cube -->
+<g filter="url(#soft)" class="lift">
+ <circle cx="355" cy="232" r="62" fill="url(#glass)" stroke="#c5b8e9" stroke-width="1.5"/>
+ <ellipse cx="355" cy="232" rx="57" ry="28" transform="rotate(-34 355 232)" stroke="#7acfd4" stroke-width="4" opacity=".86" fill="none"/>
+ <ellipse cx="355" cy="232" rx="57" ry="28" transform="rotate(34 355 232)" stroke="#a28be3" stroke-width="4" opacity=".9" fill="none"/>
+ <ellipse cx="355" cy="232" rx="58" ry="29" transform="rotate(90 355 232)" stroke="#e7c58f" stroke-width="1.5" opacity=".48" fill="none"/>
+ <path d="M355 192L379 219L355 265L329 219Z" fill="url(#glass)" stroke="#b59cda" stroke-width="1.7"/>
+ <path d="M355 192L355 265L329 219Z" fill="#d7d5fa" opacity=".94"/>
+ <path d="M355 192L379 219L355 265L355 230Z" fill="#9cd7e1" opacity=".86"/>
+ <path d="M329 219H379L355 230Z" fill="#ead7ff" opacity=".92"/>
+ <path d="M355 265V280M328 220L311 211M380 220L400 207" stroke="#a38ad7" stroke-width="2.6" stroke-linecap="round"/>
+ <path d="M336 248L320 261 M375 247L391 260" stroke="#78c0ce" stroke-width="2.4" stroke-linecap="round"/>
+ <circle cx="355" cy="224" r="10" fill="url(#gold)" stroke="#fff5e4" stroke-width="2.2"/>
+ <circle cx="342" cy="246" r="4.8" fill="#a88deb" stroke="#fff" stroke-width="1.5"/>
+ <circle cx="368" cy="246" r="4.8" fill="#67cdce" stroke="#fff" stroke-width="1.5"/>
+ <path d="M346 246Q355 254 364 246" stroke="#9b8ad6" stroke-width="1.6" fill="none" stroke-dasharray="2 4"/>
+ <circle cx="313" cy="205" r="5" fill="#f0c179" stroke="#fff" stroke-width="1.7"/>
+ <circle cx="398" cy="260" r="5" fill="#87dedc" stroke="#fff" stroke-width="1.7"/>
+</g>
+<!-- orbiting entangled photon glyphs (not plain security-padlock icon) -->
+<g class="orbit"><circle cx="355" cy="135" r="6" fill="url(#gold)" stroke="#fff" stroke-width="2"/><circle cx="355" cy="329" r="6" fill="url(#aqua)" stroke="#fff" stroke-width="2"/></g>
+<g class="orbitAlt"><circle cx="268" cy="232" r="5" fill="#a88bea" stroke="#fff" stroke-width="1.5"/><circle cx="442" cy="232" r="5" fill="#72d6d7" stroke="#fff" stroke-width="1.5"/></g>
+<!-- key material allocation cells, tiny, no text -->
+<g filter="url(#microShadow)">
+ <rect x="252" y="315" width="207" height="57" rx="18" fill="url(#glass)" stroke="#bbace9" stroke-width="1.9"/>
+ <g fill="#d7ccf5"><rect x="266" y="329" width="20" height="14" rx="3.8"/><rect x="291" y="329" width="20" height="14" rx="3.8"/><rect x="316" y="329" width="20" height="14" rx="3.8"/><rect x="341" y="329" width="20" height="14" rx="3.8"/><rect x="366" y="329" width="20" height="14" rx="3.8"/><rect x="391" y="329" width="20" height="14" rx="3.8"/><rect x="416" y="329" width="28" height="14" rx="3.8"/></g>
+ <g><rect x="267" y="349" width="19" height="11" rx="3.8" fill="#7dd6d3"/><rect x="291" y="349" width="20" height="11" rx="3.8" fill="#9fe4da"/><rect x="316" y="349" width="20" height="11" rx="3.8" fill="#79bdbf"/><rect x="341" y="349" width="20" height="11" rx="3.8" fill="#c3b4f1"/><rect x="366" y="349" width="20" height="11" rx="3.8" fill="#8c76d4"/><rect x="391" y="349" width="20" height="11" rx="3.8" fill="#d5a9cf"/><rect x="416" y="349" width="28" height="11" rx="3.8" fill="url(#gold)"/></g>
+</g>
+<path d="M356 304V315" stroke="#9c87d2" stroke-width="2.5" stroke-dasharray="3 4"/>
+
+
+<g fill="none" stroke-width="1.4" opacity=".65"><path d="M195 238Q230 220 259 228" stroke="#9e8bda"/><path d="M452 176Q475 171 494 184" stroke="#b2a3e8"/></g>
+<g opacity=".75"><path d="M52.4 67H63.6 M58 61.4V72.6" stroke="#9d89e4" stroke-width=".95" stroke-linecap="round" opacity=".8"/><path d="M292.4 61H303.6 M298 55.4V66.6" stroke="#9d89e4" stroke-width=".95" stroke-linecap="round" opacity=".8"/><path d="M440.4 85H451.6 M446 79.4V90.6" stroke="#9d89e4" stroke-width=".95" stroke-linecap="round" opacity=".8"/><path d="M669.4 196H680.6 M675 190.4V201.6" stroke="#9d89e4" stroke-width=".95" stroke-linecap="round" opacity=".8"/><path d="M63.4 395H74.6 M69 389.4V400.6" stroke="#9d89e4" stroke-width=".95" stroke-linecap="round" opacity=".8"/><path d="M226.4 420H237.6 M232 414.4V425.6" stroke="#9d89e4" stroke-width=".95" stroke-linecap="round" opacity=".8"/><path d="M655.4 430H666.6 M661 424.4V435.6" stroke="#9d89e4" stroke-width=".95" stroke-linecap="round" opacity=".8"/></g>
+<g class="traveler"><circle r="6.8" fill="#9d85e3" opacity=".20" filter="url(#glow)"/><circle r="3.4" fill="#9d85e3" stroke="white" stroke-width=".8"/><animateMotion path="M178 113Q232 151 282 198" dur="4.3s" begin="-.6s" repeatCount="indefinite"/></g>
+<g class="traveler"><circle r="6.8" fill="#7b74d1" opacity=".20" filter="url(#glow)"/><circle r="3.4" fill="#7b74d1" stroke="white" stroke-width=".8"/><animateMotion path="M527 146Q466 163 421 211" dur="4.0s" begin="-1.3s" repeatCount="indefinite"/></g>
+<g class="traveler"><circle r="6.8" fill="#57c4c9" opacity=".20" filter="url(#glow)"/><circle r="3.4" fill="#57c4c9" stroke="white" stroke-width=".8"/><animateMotion path="M157 316Q217 316 284 260" dur="4.7s" begin="-1.9s" repeatCount="indefinite"/></g>
+<g class="traveler"><circle r="6.8" fill="#66aacb" opacity=".20" filter="url(#glow)"/><circle r="3.4" fill="#66aacb" stroke="white" stroke-width=".8"/><animateMotion path="M430 263Q496 311 555 333" dur="3.8s" begin="-.7s" repeatCount="indefinite"/></g>
+<g class="traveler"><circle r="6.8" fill="#dbac6d" opacity=".20" filter="url(#glow)"/><circle r="3.4" fill="#dbac6d" stroke="white" stroke-width=".8"/><animateMotion path="M359 164Q357 137 359 115" dur="3.3s" begin="-.4s" repeatCount="indefinite"/></g>
+<g class="traveler"><circle r="6.8" fill="#9d79d2" opacity=".20" filter="url(#glow)"/><circle r="3.4" fill="#9d79d2" stroke="white" stroke-width=".8"/><animateMotion path="M406 245Q456 265 483 291" dur="4.3s" begin="-2.1s" repeatCount="indefinite"/></g>
+<g class="traveler"><circle r="5.4" fill="#f2c681" opacity=".20" filter="url(#glow)"/><circle r="2.7" fill="#f2c681" stroke="white" stroke-width=".8"/><animateMotion path="M178 113Q232 151 282 198" dur="4.4s" begin="-1.0s" repeatCount="indefinite"/></g>
+<g class="traveler"><circle r="5.4" fill="#ecc68f" opacity=".20" filter="url(#glow)"/><circle r="2.7" fill="#ecc68f" stroke="white" stroke-width=".8"/><animateMotion path="M430 263Q496 311 555 333" dur="3.8s" begin="-1.1s" repeatCount="indefinite"/></g>
+<rect x="9" y="9" width="702" height="462" rx="25" fill="none" stroke="#d2c8f6" stroke-width="1.4" opacity=".68"/>
+<path d="M25 67V45Q25 26 45 26H73 M648 26H674Q696 26 696 48V70 M24 409V432Q24 453 45 453H69 M648 453H677Q696 453 696 433V411" fill="none" stroke="#b4a4eb" stroke-width="2" opacity=".49"/>
+</g></svg>

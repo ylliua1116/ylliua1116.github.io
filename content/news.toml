@@ -1,0 +1,29 @@
+
+[[news]]
+date = "Oct 2026"
+content = "Launched YAO LAB · 爻间, an interactive I Ching laboratory connecting 64 hexagrams through six-bit geometry, probability experiments, classical texts, and optional AI-assisted reflection."
+
+[[news.links]]
+label = "Live Website"
+url = "https://ylliua1116.github.io/yao-lab/"
+
+[[news.links]]
+label = "GitHub"
+url = "https://github.com/ylliua1116/yao-lab"
+
+[[news]]
+date = "Sep 2026"
+content = "My work on online causal configuration for networked systems was accepted at NeurIPS 2026."
+
+[[news]]
+date = "Aug 2026"
+content = "A preprint on dependency-aware HARQ for open-vocabulary scene graphs became publicly available on arXiv."
+
+[[news]]
+date = "Aug 2025"
+content = "My maritime UAV–USV task-offloading paper received the AIoTC 2025 Best Paper Award."
+
+[[news]]
+date = "Mar 2025"
+content = "My collaborative robotic inspection work appeared in IEEE Transactions on Instrumentation and Measurement."
+

@@ -1,0 +1,76 @@
+[site]
+title = "Yuli Liu"
+description = "Academic homepage of Yuli Liu: causal decision-making, wireless communications, and cooperative intelligence."
+favicon = "/favicon.png"
+last_updated = "October 2026"
+
+[author]
+name = "Yuli Liu"
+title = "Master's"
+institution = "University of Macau"
+avatar = "/profile.jpg"
+
+[social]
+# Both email addresses are displayed literally with @ and can be clicked (mailto:).
+email = "mc45259@um.edu.mo"
+email_secondary = "ylliua1116@gmail.com"
+location = ""
+location_url = ""
+google_scholar = "https://scholar.google.com/citations?user=X63QcQoAAAAJ&hl=zh-TW"
+# Public profile URL, not the account-management /my-orcid link.
+orcid = "https://orcid.org/0009-0006-0140-1211"
+github = "https://github.com/ylliua1116"
+linkedin = ""
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["zh", "en"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = true
+switcher = true
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Research"
+type = "page"
+target = "research"
+href = "/research"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Experience"
+type = "page"
+target = "experience"
+href = "/experience"
+
+[[navigation]]
+title = "Awards"
+type = "page"
+target = "awards"
+href = "/awards"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"

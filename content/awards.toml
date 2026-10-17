@@ -1,0 +1,15 @@
+type = "card"
+title = "Awards"
+description = "Selected academic distinctions"
+
+[[items]]
+title = "Best Paper Award"
+subtitle = "AIoTC 2025"
+date = "2025"
+content = "Recognition for “Low-Altitude Task Offloading for UAV–USV Collaboration in Marine Edge-Enabled Networks.” [Paper](https://doi.org/10.1109/AIoTC66747.2025.11198686)"
+
+[[items]]
+title = "National Encouragement Scholarship"
+subtitle = "Undergraduate studies"
+date = "2021–2023"
+content = "Academic recognition during undergraduate studies."

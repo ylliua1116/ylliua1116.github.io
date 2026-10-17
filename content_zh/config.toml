@@ -1,0 +1,47 @@
+[site]
+title = "刘昱利"
+description = "刘昱利的学术个人主页：因果决策、无线通信与协同智能。"
+favicon = "/favicon.png"
+last_updated = "2026年10月"
+
+[author]
+name = "刘昱利"
+title = "硕士"
+institution = "澳门大学"
+avatar = "/profile.jpg"
+
+[[navigation]]
+title = "关于我"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "研究方向"
+type = "page"
+target = "research"
+href = "/research"
+
+[[navigation]]
+title = "论文"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "科研经历"
+type = "page"
+target = "experience"
+href = "/experience"
+
+[[navigation]]
+title = "奖项"
+type = "page"
+target = "awards"
+href = "/awards"
+
+[[navigation]]
+title = "简历"
+type = "page"
+target = "cv"
+href = "/cv"

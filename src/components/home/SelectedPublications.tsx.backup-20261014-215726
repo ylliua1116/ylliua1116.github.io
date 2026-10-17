@@ -1,0 +1,24 @@
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { Publication } from '@/types/publication';
+import { useMessages } from '@/lib/i18n/useMessages';
+import { useLocaleStore } from '@/lib/stores/localeStore';
+import { publicationStatus } from '@/lib/publicationStatus';
+import { researchPapers } from '@/data/researchPapers';
+
+interface Props {publications:Publication[]; title?:string; enableOnePageMode?:boolean}
+export default function SelectedPublications({publications,title,enableOnePageMode=false}: Props) {
+  const messages=useMessages();const zh=useLocaleStore(s=>s.locale)==='zh';
+  const meta=new Map(researchPapers.map(p=>[p.bibkey,p]));
+  return <motion.section initial={{opacity:0,y:14}} animate={{opacity:1,y:0}} transition={{duration:.4}} className="space-y-4">
+    <div className="flex items-center justify-between gap-3"><h2 className="text-2xl font-serif font-bold text-primary">{title||messages.home.selectedPublications}</h2><Link className="text-sm font-semibold text-violet-700 dark:text-violet-200 hover:underline" href={enableOnePageMode?'#publications':'/publications/'}>{messages.home.viewAll} →</Link></div>
+    {publications.map(pub=>{
+      const p=meta.get(pub.id);return <Link key={pub.id} href={`/publications/#paper-${pub.id}`} className="flex gap-3 items-start rounded-2xl border border-violet-200/70 dark:border-violet-400/25 bg-[#fffcff] dark:bg-[#352749] p-3.5 hover:border-violet-400 hover:shadow-lg transition-all">
+        <div className="relative hidden sm:block shrink-0 w-24 h-20 rounded-lg overflow-hidden bg-violet-100 dark:bg-violet-800"><Image src={p?.preview||'/papers/P1-figure1-placeholder.svg'} alt="Figure 1 placeholder" fill sizes="100px" className="object-cover" unoptimized/></div>
+        <div className="min-w-0 flex-1 space-y-1.5"><div className="flex flex-wrap gap-1.5"><span className="text-[10px] font-semibold text-violet-700 dark:text-violet-200 rounded-full bg-violet-100 dark:bg-violet-500/20 px-2 py-1">{publicationStatus(pub.status,zh)}</span><span className="text-[10px] text-neutral-500 px-1 py-1">{pub.year}</span></div><h3 className="text-sm sm:text-base font-semibold leading-snug text-primary">{pub.title}</h3><p className="text-xs text-neutral-500 dark:text-neutral-300">{pub.venue}</p><p className="text-xs text-neutral-600 dark:text-neutral-300 line-clamp-2">{zh?p?.summaryZh:p?.summary}</p></div>
+      </Link>;
+    })}
+  </motion.section>;
+}
